@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/layout_titlebar"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/layout_x_60"
+            android:paddingRight="@dimen/layout_x_60" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/layout_x_100"
+                android:layout_height="@dimen/layout_x_100"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/layout_y_80"
+                android:src="@drawable/ic_launcher" />
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_50"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginBottom="@dimen/layout_y_5"
+                android:layout_marginTop="@dimen/layout_y_50"
+                android:background="@drawable/shape_login_edit" >
+
+                <com.haoke.picturepat.edittext.PhoneEdit
+                    android:id="@+id/ed_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_y_50"
+                    android:background="@drawable/shape_login_edit"
+                    android:ems="10"
+                    android:hint="@string/login_accounts"
+                    android:paddingLeft="@dimen/layout_x_10"
+                    android:paddingRight="@dimen/layout_x_10"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@drawable/textcursor_white"
+                    android:textSize="@dimen/layout_x_20" >
+
+                    <requestFocus />
+                </com.haoke.picturepat.edittext.PhoneEdit>
+
+                <ImageView
+                    android:id="@+id/login_xia"
+                    android:layout_width="@dimen/layout_y_36"
+                    android:layout_height="@dimen/layout_y_36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/layout_x_10"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iov_map_down_n" />
+            </RelativeLayout>
+
+            <com.haoke.picturepat.edittext.PassWordEdit
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_50"
+                android:layout_below="@+id/rel1"
+                android:layout_marginBottom="@dimen/layout_y_30"
+                android:layout_marginTop="@dimen/layout_y_15"
+                android:background="@drawable/shape_login_edit"
+                android:ems="10"
+                android:hint="@string/login_password"
+                android:paddingLeft="@dimen/layout_x_10"
+                android:paddingRight="@dimen/layout_x_10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/textcursor_white"
+                android:textSize="@dimen/layout_x_20" />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="@dimen/layout_x_230"
+                android:layout_height="@dimen/layout_y_50"
+                android:layout_below="@+id/ed_password"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/layout_x_10"
+                android:background="@drawable/shape_white_300"
+                android:text="@string/login_login"
+                android:textColor="@color/violet"
+                android:textSize="@dimen/layout_x_23"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_login"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/layout_x_5"
+                android:text="@string/login_forget"
+                android:textColor="@drawable/white_bt"
+                android:textSize="@dimen/layout_x_20" />
+
+            <ListView
+                android:id="@+id/login_listview"
+                android:layout_width="@dimen/layout_x_360"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_login_listview"
+                android:divider="#ccc"
+                android:dividerHeight="@dimen/layout_y_1"
+                android:visibility="gone" >
+            </ListView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_180"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_40" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_80" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_2"
+                android:background="@color/white_3" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login_register"
+                android:textColor="@drawable/white_bt"
+                android:textSize="@dimen/layout_x_20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

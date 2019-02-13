@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:soundEffectsEnabled="false" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_myinfo"
+                style="@style/title_style"
+                android:layout_width="match_parent"
+                android:background="@drawable/title_bg" >
+
+                <LinearLayout
+                    android:id="@+id/title_lin"
+                    style="@style/title_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/title_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <ImageView
+                            android:id="@+id/ima_left"
+                            android:layout_width="@dimen/layout_x_50"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/switch_back" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="13" >
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="TextView"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/layout_y_20" />
+
+                        <RelativeLayout
+                            android:id="@+id/bt_ble"
+                            android:layout_width="@dimen/layout_x_60"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true" >
+
+                            <Button
+                                android:id="@+id/button1"
+                                android:layout_width="@dimen/layout_y_40"
+                                android:layout_height="@dimen/layout_y_30"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/loc_share"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/title_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <ImageView
+                            android:id="@+id/ima_right"
+                            android:layout_width="@dimen/layout_y_40"
+                            android:layout_height="@dimen/layout_y_40"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/loc_menu" />
+
+                        <TextView
+                            android:id="@+id/tv_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="取消"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/layout_y_18"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <com.baidu.lbsapi.panoramaview.PanoramaView
+                        android:id="@+id/panorama"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:visibility="gone" >
+                    </com.baidu.lbsapi.panoramaview.PanoramaView>
+
+                    <com.baidu.mapapi.map.MapView
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2" >
+                    </com.baidu.mapapi.map.MapView>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/ck_satellite"
+                    android:layout_width="@dimen/layout_y_55"
+                    android:layout_height="@dimen/layout_y_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/layout_y_15"
+                    android:background="@drawable/loc_satellite"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:id="@+id/ck_Traffic"
+                    android:layout_width="@dimen/layout_y_55"
+                    android:layout_height="@dimen/layout_y_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ck_satellite"
+                    android:layout_marginRight="@dimen/layout_y_15"
+                    android:background="@drawable/loc_traffic"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:id="@+id/ck_Location"
+                    android:layout_width="@dimen/layout_y_55"
+                    android:layout_height="@dimen/layout_y_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ck_Traffic"
+                    android:layout_margin="@dimen/layout_y_15"
+                    android:background="@drawable/loc_position"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <Button
+                    android:id="@+id/bt_cr"
+                    android:layout_width="@dimen/layout_y_55"
+                    android:layout_height="@dimen/layout_y_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ck_Location"
+                    android:layout_marginRight="@dimen/layout_y_15"
+                    android:background="@drawable/loc_location"
+                    android:text="" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_x_10" >
+
+            <Button
+                android:id="@+id/bt_gps"
+                android:layout_width="@dimen/layout_y_55"
+                android:layout_height="@dimen/layout_y_50"
+                android:background="@drawable/loc_gps"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/ck_Marker"
+                android:layout_width="@dimen/layout_y_55"
+                android:layout_height="@dimen/layout_y_50"
+                android:background="@drawable/loc_marker"
+                android:button="@null"
+                android:checked="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_y_50"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="@dimen/layout_x_15" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_blue_bt"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxEms="10"
+                        android:padding="@dimen/layout_x_5"
+                        android:text="name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/layout_x_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_online"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/layout_x_5"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/layout_x_16" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <com.haoke.picturepat.view.RichText
+                            android:id="@+id/rt_speed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="@dimen/layout_x_10"
+                            android:gravity="center"
+                            android:textColor="@color/gray_6"
+                            android:textSize="@dimen/layout_x_15"
+                            rtv:icon_direction="left"
+                            rtv:icon_height="@dimen/layout_y_30"
+                            rtv:icon_src_normal="@drawable/device_info_2"
+                            rtv:icon_width="@dimen/layout_y_30" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/layout_x_1"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/layout_x_10"
+                        android:layout_marginTop="@dimen/layout_x_10"
+                        android:background="@color/gray_a" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_down"
+                        android:layout_width="@dimen/layout_x_60"
+                        android:layout_height="@dimen/layout_x_50"
+                        android:background="@color/white" >
+
+                        <ImageView
+                            android:id="@+id/image_down"
+                            android:layout_width="@dimen/layout_x_30"
+                            android:layout_height="@dimen/layout_x_30"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/iov_up_down_bt" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_y_105"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_y_1"
+                        android:background="@color/gray_a" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_y_35"
+                        android:gravity="center" >
+
+                        <RelativeLayout
+                            android:id="@+id/rel_dianhuo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <com.haoke.picturepat.view.RichText
+                                android:id="@+id/rt_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/layout_x_30"
+                                android:drawablePadding="@dimen/layout_x_10"
+                                android:gravity="center"
+                                android:textColor="@color/gray_6"
+                                android:textSize="@dimen/layout_x_15"
+                                rtv:icon_direction="left"
+                                rtv:icon_height="@dimen/layout_y_30"
+                                rtv:icon_src_normal="@drawable/device_info_1"
+                                rtv:icon_width="@dimen/layout_y_30" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <com.haoke.picturepat.view.RichText
+                                android:id="@+id/rt_bvalid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/layout_x_10"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/gray_6"
+                                android:textSize="@dimen/layout_x_15"
+                                rtv:icon_direction="left"
+                                rtv:icon_height="@dimen/layout_y_30"
+                                rtv:icon_src_normal="@drawable/device_info_7"
+                                rtv:icon_width="@dimen/layout_y_30" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <com.haoke.picturepat.view.RichText
+                                android:id="@+id/rt_battery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/layout_x_10"
+                                android:gravity="center"
+                                android:textColor="@color/gray_6"
+                                android:textSize="@dimen/layout_x_15"
+                                rtv:icon_direction="left"
+                                rtv:icon_height="@dimen/layout_y_30"
+                                rtv:icon_src_normal="@drawable/device_info_3"
+                                rtv:icon_width="@dimen/layout_y_30" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_door"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <com.haoke.picturepat.view.RichText
+                                android:id="@+id/rt_door"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/layout_x_10"
+                                android:gravity="center"
+                                android:textColor="@color/gray_6"
+                                android:textSize="@dimen/layout_x_15"
+                                rtv:icon_direction="left"
+                                rtv:icon_height="@dimen/layout_y_30"
+                                rtv:icon_src_normal="@drawable/device_info_4"
+                                rtv:icon_width="@dimen/layout_y_30" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_y_35"
+                        android:gravity="center" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <com.haoke.picturepat.view.RichText
+                                android:id="@+id/rt_gpsTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/layout_x_30"
+                                android:drawablePadding="@dimen/layout_x_10"
+                                android:gravity="center"
+                                android:text="2017-12-12 10:10:10"
+                                android:textColor="@color/gray_6"
+                                android:textSize="@dimen/layout_x_15"
+                                rtv:icon_direction="left"
+                                rtv:icon_height="@dimen/layout_y_30"
+                                rtv:icon_src_normal="@drawable/device_info_5"
+                                rtv:icon_width="@dimen/layout_y_30" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <com.haoke.picturepat.view.RichText
+                                android:id="@+id/rt_gsmTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/layout_x_10"
+                                android:gravity="center"
+                                android:text="2017-12-12 10:10:10"
+                                android:textColor="@color/gray_6"
+                                android:textSize="@dimen/layout_x_15"
+                                rtv:icon_direction="left"
+                                rtv:icon_height="@dimen/layout_y_30"
+                                rtv:icon_src_normal="@drawable/device_info_6"
+                                rtv:icon_width="@dimen/layout_y_30" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="@dimen/layout_y_35" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/layout_x_30"
+                                android:text="@string/iov_main_map_address"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/layout_x_18" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

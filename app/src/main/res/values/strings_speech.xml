@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- main -->
+    <string name="speech">语音</string>
+    <string name="speech_stop_music">请退出语音界面在播放歌曲</string>
+    <string name="speech_start">您可以说导航、打电话<!-- 、听音乐 --></string>
+    <string name="speech_no">您好像没说话</string>
+    <string name="speech_close">再见</string>
+    <string name="speech_mic_close">麦克风权限未开或已经被占用，再见</string>
+    <string name="speech_network_close">网络异常，再见</string>
+    <string name="speech_no_hearing">没听清，请说第几个或取消</string>
+    <string name="speech_no_study">我还没学会</string>
+    <string name="speech_on_select_number">%s请说第几个或取消</string>
+    <string name="speech_on_select_ensure">%s请说确定或取消</string>
+    <!-- 电话 -->
+    <string name="speech_goto_phone_num">即将给号码%s打电话</string>
+    <string name="speech_search_phone_name">电话本中搜索%s，请稍后</string>
+    <string name="speech_phone">您要打电话给谁</string>
+    <string name="speech_no_phone">未搜索到号码,请说打电话给谁</string>
+    <string name="speech_goto_phone_name">即将为您呼叫%s</string>
+    <!-- 地图 -->
+    <string name="speech_search_address">正在搜索%s相关位置..</string>
+    <string name="speech_address">您要导航到哪里？</string>
+    <string name="speech_no_address">未搜索到位置信息,您要导航到哪里？</string>
+    <string name="speech_goto_address">即将为您导航到%s</string>
+    <!-- 音乐 -->
+    <string name="speech_search_music">正在搜索%s相关音乐..</string>
+    <string name="speech_goto_music">准备进入播放界面</string>
+
+    <!-- 语音提示 -->
+    <string name="speech_hint_1">您可以这样说</string>
+    <string name="speech_hint_2">导航到深圳北站</string>
+    <string name="speech_hint_3">打电话给小红</string>
+    <string name="speech_hint_4"><!-- 来一首小苹果 --></string>
+    <string name="speech_hint_5"><!-- 来一首刘德华的歌曲 --></string>
+
+</resources>

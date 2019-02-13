@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_60"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/layout_x_40"
+        android:paddingRight="@dimen/layout_x_20" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/device_config_spacing"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_20" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_20" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_y_30"
+            android:layout_height="@dimen/layout_y_30"
+            android:src="@drawable/register_next" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_1"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:background="@color/gray_a" />
+
+    <LinearLayout
+        android:id="@+id/lin_sosnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:background="@drawable/white_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_config_sosnum"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <ImageView
+                android:layout_width="@dimen/layout_y_30"
+                android:layout_height="@dimen/layout_y_30"
+                android:src="@drawable/register_next" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_factory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_60"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/layout_x_40"
+        android:paddingRight="@dimen/layout_x_20" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/device_info_factory"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_20" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_y_30"
+            android:layout_height="@dimen/layout_y_30"
+            android:src="@drawable/register_next" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_1"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:background="@color/gray_a" />
+
+    <LinearLayout
+        android:id="@+id/lin_version"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_60"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/layout_x_40"
+        android:paddingRight="@dimen/layout_x_20" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/device_info_version"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_20" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_20" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_y_30"
+            android:layout_height="@dimen/layout_y_30"
+            android:src="@drawable/register_next" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_1"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:background="@color/gray_a" />
+
+    <LinearLayout
+        android:id="@+id/lin_custom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_60"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/layout_x_40"
+        android:paddingRight="@dimen/layout_x_20" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/device_info_custom"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_20" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_y_30"
+            android:layout_height="@dimen/layout_y_30"
+            android:src="@drawable/register_next" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_1"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:background="@color/gray_a" />
+
+</LinearLayout>

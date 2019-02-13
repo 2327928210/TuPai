@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_robot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_x_10" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="@dimen/layout_x_48"
+            android:layout_height="@dimen/layout_x_48"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/layout_x_80" >
+
+            <TextView
+                android:id="@+id/tv_robot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar_left"
+                android:gravity="center_vertical"
+                android:text="asdsad"
+                android:textColor="@color/voice_bg"
+                android:textSize="@dimen/layout_x_18" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="@dimen/layout_x_10" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/layout_x_80" >
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bar_right"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/voice_bg"
+                android:textSize="@dimen/layout_x_18" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ima_voice_user"
+            android:layout_width="@dimen/layout_x_50"
+            android:layout_height="@dimen/layout_x_50"
+            android:src="@drawable/ui2_user_icon_default" />
+    </LinearLayout>
+
+</LinearLayout>

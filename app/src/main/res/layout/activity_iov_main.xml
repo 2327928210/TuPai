@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtv="http://schemas.android.com/apk/res-autot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_myinfo"
+        style="@style/title_style"
+        android:background="@drawable/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/title_lin"
+            style="@style/title_style"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <RelativeLayout
+                android:id="@+id/title_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_y_2"
+                android:layout_weight="2" >
+
+                <ImageView
+                    android:id="@+id/ima_left"
+                    android:layout_width="@dimen/layout_x_50"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/switch_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="@dimen/layout_y_20" />
+
+                <com.haoke.picturepat.view.RichText
+                    android:id="@+id/tv_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/layout_y_20"
+                    rtv:icon_direction="right"
+                    rtv:icon_height="@dimen/layout_y_30"
+                    rtv:icon_src_normal="@drawable/down1"
+                    rtv:icon_src_pressed="@drawable/down1"
+                    rtv:icon_src_unable="@drawable/down1"
+                    rtv:icon_width="@dimen/layout_y_30" />
+
+                <com.haoke.picturepat.view.RichText
+                    android:id="@+id/tv_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/layout_y_20"
+                    rtv:icon_direction="right"
+                    rtv:icon_height="@dimen/layout_y_30"
+                    rtv:icon_src_normal="@drawable/down1"
+                    rtv:icon_src_pressed="@drawable/down1"
+                    rtv:icon_src_unable="@drawable/down1"
+                    rtv:icon_width="@dimen/layout_y_30" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" >
+
+                <ImageView
+                    android:id="@+id/ima_right"
+                    android:layout_width="@dimen/layout_x_45"
+                    android:layout_height="@dimen/layout_x_45"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/layout_y_18"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.haoke.picturepat.view.MyViewPager
+            android:id="@+id/m_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" >
+        </com.haoke.picturepat.view.MyViewPager>
+
+        <ImageView
+            android:id="@+id/ima_photo"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_marginTop="@dimen/layout_x_10"
+            android:layout_width="@dimen/layout_x_40"
+            android:layout_height="@dimen/layout_x_40"
+            android:background="@drawable/main_paizhao" >
+        </ImageView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_1"
+        android:background="@color/gray_a" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_60"
+        android:gravity="center" >
+
+        <com.haoke.picturepat.view.RichText
+            android:id="@+id/rt_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/iov_main_location"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/layout_x_15"
+            rtv:icon_direction="top"
+            rtv:icon_height="@dimen/layout_y_30"
+            rtv:icon_src_normal="@drawable/iov_main_tag_1_n"
+            rtv:icon_src_pressed="@drawable/iov_main_tag_1_p"
+            rtv:icon_src_unable="@drawable/iov_main_tag_1_p"
+            rtv:icon_width="@dimen/layout_y_30"
+            rtv:text_color_pressed="@color/blue_p"
+            rtv:text_color_unable="@color/blue_p" />
+
+        <com.haoke.picturepat.view.RichText
+            android:id="@+id/rt_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/iov_main_list"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/layout_x_15"
+            rtv:icon_direction="top"
+            rtv:icon_height="@dimen/layout_y_30"
+            rtv:icon_src_normal="@drawable/iov_main_tag_2_n"
+            rtv:icon_src_pressed="@drawable/iov_main_tag_2_p"
+            rtv:icon_src_unable="@drawable/iov_main_tag_2_p"
+            rtv:icon_width="@dimen/layout_y_30"
+            rtv:text_color_pressed="@color/blue_p"
+            rtv:text_color_unable="@color/blue_p" />
+
+        <com.haoke.picturepat.view.RichText
+            android:id="@+id/rt_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/iov_main_message"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/layout_x_15"
+            rtv:icon_direction="top"
+            rtv:icon_height="@dimen/layout_y_30"
+            rtv:icon_src_normal="@drawable/iov_main_tag_3_n"
+            rtv:icon_src_pressed="@drawable/iov_main_tag_3_p"
+            rtv:icon_src_unable="@drawable/iov_main_tag_3_p"
+            rtv:icon_width="@dimen/layout_y_30"
+            rtv:text_color_pressed="@color/blue_p"
+            rtv:text_color_unable="@color/blue_p" />
+
+        <com.haoke.picturepat.view.RichText
+            android:id="@+id/rt_voice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/iov_main_voice"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/layout_x_15"
+            rtv:icon_direction="top"
+            rtv:icon_height="@dimen/layout_y_30"
+            rtv:icon_src_normal="@drawable/iov_main_tag_4_n"
+            rtv:icon_src_pressed="@drawable/iov_main_tag_4_p"
+            rtv:icon_src_unable="@drawable/iov_main_tag_4_p"
+            rtv:icon_width="@dimen/layout_y_30"
+            rtv:text_color_pressed="@color/blue_p"
+            rtv:text_color_unable="@color/blue_p" />
+    </LinearLayout>
+
+</LinearLayout>

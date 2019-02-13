@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtv="http://schemas.android.com/apk/res/com.haoke.picturepat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_10"
+        android:background="@color/gray_ef" />
+
+    <LinearLayout
+        android:id="@+id/lin_test"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_70"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:padding="@dimen/layout_x_10" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/layout_y_50"
+            android:layout_height="@dimen/layout_y_50"
+            android:src="@drawable/music_bg_domain" 
+            android:clickable="true"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_x_10"
+            android:paddingRight="@dimen/layout_x_10" >
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="粤B2Y102"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_18" />
+
+            <TextView
+                android:id="@+id/tv_imei"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iov_main_list_imei"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_18" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_0"
+            android:layout_width="@dimen/layout_y_35"
+            android:layout_height="@dimen/layout_y_35"
+            android:background="@drawable/iov_lis_0"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_has"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:background="@color/gray_a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_80"
+            android:background="@color/white"
+            android:padding="@dimen/layout_y_10" >
+
+            <com.haoke.picturepat.view.RichText
+                android:id="@+id/rt_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iov_main_list_rt1"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_15"
+                rtv:icon_direction="top"
+                rtv:icon_height="@dimen/layout_y_30"
+                rtv:icon_src_normal="@drawable/iov_list_1_n"
+                rtv:icon_src_pressed="@drawable/iov_list_1_p"
+                rtv:icon_width="@dimen/layout_y_30"
+                rtv:text_color_pressed="@color/blue_p" />
+
+            <com.haoke.picturepat.view.RichText
+                android:id="@+id/rt_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iov_main_list_rt2"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_15"
+                rtv:icon_direction="top"
+                rtv:icon_height="@dimen/layout_y_30"
+                rtv:icon_src_normal="@drawable/iov_list_2_n"
+                rtv:icon_src_pressed="@drawable/iov_list_2_p"
+                rtv:icon_width="@dimen/layout_y_30"
+                rtv:text_color_pressed="@color/blue_p" />
+
+            <com.haoke.picturepat.view.RichText
+                android:id="@+id/rt_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iov_main_list_rt3"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_15"
+                rtv:icon_direction="top"
+                rtv:icon_height="@dimen/layout_y_30"
+                rtv:icon_src_normal="@drawable/iov_list_3_n"
+                rtv:icon_src_pressed="@drawable/iov_list_3_p"
+                rtv:icon_width="@dimen/layout_y_30"
+                rtv:text_color_pressed="@color/blue_p" />
+
+            <com.haoke.picturepat.view.RichText
+                android:id="@+id/rt_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iov_main_list_rt4"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_15"
+                rtv:icon_direction="top"
+                rtv:icon_height="@dimen/layout_y_30"
+                rtv:icon_src_normal="@drawable/iov_list_4_n"
+                rtv:icon_src_pressed="@drawable/iov_list_4_p"
+                rtv:icon_width="@dimen/layout_y_30"
+                rtv:text_color_pressed="@color/blue_p" />
+
+            <com.haoke.picturepat.view.RichText
+                android:id="@+id/rt_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iov_main_list_rt5"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_15"
+                rtv:icon_direction="top"
+                rtv:icon_height="@dimen/layout_y_30"
+                rtv:icon_src_normal="@drawable/iov_list_5_n"
+                rtv:icon_src_pressed="@drawable/iov_list_5_p"
+                rtv:icon_width="@dimen/layout_y_30"
+                rtv:text_color_pressed="@color/blue_p" />
+
+            <com.haoke.picturepat.view.RichText
+                android:id="@+id/rt_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iov_main_list_rt6"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_15"
+                rtv:icon_direction="top"
+                rtv:icon_height="@dimen/layout_y_30"
+                rtv:icon_src_normal="@drawable/iov_list_6_n"
+                rtv:icon_src_pressed="@drawable/iov_list_6_p"
+                rtv:icon_width="@dimen/layout_y_30"
+                rtv:text_color_pressed="@color/blue_p" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- main -->
+    <string name="photo_main_city_name">城市名</string>
+    <string name="photo_main_map_text">搜索</string>
+    <string name="photo_main_map_Photograph">拍照</string>
+    <string name="photo_main_edit">预览</string>
+    <string name="photo_edit_end">完成</string>
+     <string name="photo_edit_edit">编辑</string>
+      <string name="photo_list_syhd">商业活动</string>
+    <string name="photo_main_shar_text">分享新鲜事...</string>
+    <string name="photo_main_addtag">添加标签</string>
+    <string name="photo_main_preview">发表</string>
+    <string name="photo_main_complete">完成</string>
+    <string name="photo_main_poi">所在位置</string>
+    <string name="photo_main_poi_search">搜索附近位置</string>
+    <!-- 图片Dialog -->
+    <string name="photo_dialog_navigation">导航过去</string>
+    <string name="photo_dialog_shop">进店铺</string>
+    <string name="photo_dialog_distance_m">距离%.0fm</string>
+    <string name="photo_dialog_distance_km">距离%.2fkm</string>
+    <!-- 图片编辑 -->
+    <string name="gallery_all_folder">所有图片</string>
+    <string name="gallery_shoot">拍摄照片</string>
+    <string name="gallery_finish">( %1$d / %2$d )完成</string>
+    <string name="gallery_preview">详情</string>
+    <string name="gallery_gallery">相册</string>
+    <string name="gallery_send">发送</string>
+    <string name="gallery_msg_no_camera">没有系统相机</string>
+    <string name="gallery_folder_name">文件夹名</string>
+    <string name="gallery_photo_num">%d 张</string>
+    <string name="gallery_empty">未选择图片</string>
+    <!-- 提示 -->
+    <string name="photo_cue_title_empty">标题不能为空</string>
+    <string name="photo_cue_title_note">内容不能为空</string>
+    <string name="photo_cue_title_photo">图片不能为空</string>
+
+</resources>

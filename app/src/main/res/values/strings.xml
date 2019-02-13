@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">图拍</string>
+    <string name="language">CN</string>
+    <string name="cue_please_commitwait">正在上传，请稍候...</string>
+    <!-- other -->
+    <string name="other_delete">删除</string>
+    <string name="other_cancel">取消</string>
+    <string name="other_ensure">确定</string>
+    <string name="other_save">保存</string>
+    <string name="other_edit">编辑</string>
+    <string name="other_open">开</string>
+    <string name="other_close">关</string>
+    <string name="other_back">后退</string>
+    <!-- 单位 -->
+    <string name="s">秒</string>
+    <string name="m">米</string>
+    <string name="km">千米</string>
+    <!-- 刷新提示 -->
+    <string name="refresh_top_end">释放即可刷新</string>
+    <string name="refresh_top_ing">正在刷新中...</string>
+    <!-- start -->
+    <string name="start_1">智能管家，畅行天下</string>
+    <string name="start_2">位置服务+图拍</string>
+    <!-- main -->
+    <string name="main_logout_1">未登录</string>
+    <string name="main_logout_2">该账户已在其它地方登录</string>
+    <string name="main_logout_cue">您的帐号已在其它地方登录，是否重新登录</string>
+    <!-- 导航 -->
+    <string name="sendnavi_navi">导航</string>
+    <string name="sendnavi">导航地址发送</string>
+    <string name="sendnavi_phone">接收人手机号码</string>
+    <string name="sendnavi_address">地址简称</string>
+    <string name="sendnavi_mess">留言说明</string>
+    <string name="sendnavi_send">发送</string>
+    <string name="sendnavi_Return">返回</string>
+    <!-- 登录 -->
+    <string name="login">登录帐号</string>
+    <string name="login_accounts">帐号</string>
+    <string name="login_password">密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_register">新用户注册</string>
+    <string name="login_forget">忘记密码?</string>
+    <!-- 注册 -->
+    <string name="register">注册帐号</string>
+    <string name="register_register">注册</string>
+    <string name="register_1">1.验证手机</string>
+    <string name="register_2">2.设置密码</string>
+    <string name="register_3">3.昵称头像</string>
+    <string name="register_next">下一步</string>
+    <string name="register_AccepteSrv">我已阅读并接受《相关用户协议》</string>
+    <string name="register_wx">绑定微信</string>
+    <!-- 主页 -->
+    <string name="main">主页</string>
+    <string name="main_findcar">位置服务</string>
+    <string name="main_music">音乐</string>
+    <string name="main_camera">图拍</string>
+    <!-- 绑定 -->
+    <string name="binding">设备绑定</string>
+    <string name="binding_text">请输入设备IMEI号进行绑定</string>
+    <string name="binding_ensure">确定绑定</string>
+    <!-- 音乐列表 -->
+    <string name="music">音乐列表</string>
+    <string name="music_phone">手机音乐</string>
+    <string name="music_u">U盘</string>
+    <string name="music_network">在线音乐</string>
+    <string name="music_artist_phone">本地%s</string>
+    <string name="music_artist_u">USB%s</string>
+    <string name="music_artist_network">网络%s</string>
+    <!-- 设置地图 -->
+    <string name="setmap">设置地图</string>
+    <string name="setmap_baidu">百度地图</string>
+    <string name="setmap_gaode">高德地图</string>
+    <!-- 轨迹 -->
+    <string name="tra">轨迹</string>
+    <!-- FM -->
+    <string name="FM">FM发射</string>
+    <!-- 二维码扫描 -->
+    <string name="twocode">条形码扫描</string>
+    <!-- 忘记密码 -->
+    <string name="forgot">忘记密码</string>
+    <string name="forgot_forgot">重置新密码</string>
+    <string name="forgot_edit">修改</string>
+    <!-- 修改密码 -->
+    <string name="editpassword">修改密码</string>
+    <!-- 个人中心 -->
+    <string name="userinfo">个人中心</string>
+    <string name="userinfo_Album">从相册选择</string>
+    <string name="userinfo_camera">拍照上传</string>
+    <string name="userinfo_photo">系统头像</string>
+    <string name="userinfo_name">姓名</string>
+    <string name="userinfo_image">头像</string>
+    <string name="userinfo_accounts">帐号</string>
+    <string name="userinfo_password">修改密码</string>
+    <string name="userinfo_weixin">微信</string>
+    <string name="userinfo_mic">蓝牙麦克风</string>
+    <string name="userinfo_fm">FM发射</string>
+    <string name="userinfo_map">设置地图</string>
+    <string name="userinfo_mess">消息中心</string>
+    <string name="userinfo_we">关于我们</string>
+    <string name="wechat">微信</string>
+    <string name="friends">朋友圈</string>
+    <string name="qq">QQ</string>
+    <string name="more">更多应用</string>
+    <string name="userinfo_we_share">分享</string>
+    <string name="userinfo_we_edit">编辑</string>
+    <string name="share_url_format" formatted="false">推荐你使用%s软件，软件下载地址:%s[%s]</string>
+    <string name="userinfo_out">退出帐号</string>
+    <string name="userinfo_out_cue">帐号退出后会清除您的登录密码和消息，下次登录需要重新输入密码</string>
+    <!-- 授权 -->
+    <string name="permission_open">为了保证应用正常运行，请打开权限</string>
+    <string name="permission_location">为了保证应用正常运行，需要获取位置权限</string>
+    <string name="permission_camera">为了保证应用正常运行，需要获取相机权限</string>
+    <string name="permission_read">为了保证应用正常运行，需要获取读写手机存储权限权限</string>
+    <string name="permission">授权</string>
+    <string name="permission_active">手动授权</string>
+    <!-- 智能找车 -->
+    <string name="findcar">智能找车</string>
+    <string name="findcar_clock_tenleft">剩下10分钟了</string>
+    <string name="findcar_clock_immediately">时间到了</string>
+    <string name="findcar2_sysset_sound">声音设置</string>
+    <!-- 蓝牙搜索 -->
+    <string name="ble_connect">蓝牙连接</string>
+    <string name="ble_device">设备</string>
+    <string name="ble_scan">搜索</string>
+    <string name="ble_connect_ing">开始连接设备</string>
+    <string name="ble_connect_end">设备已连接成功</string>
+    <!-- 我在这儿 -->
+    <string name="ihere_title">我在这儿</string>
+    <!-- edittext hint -->
+    <string name="hint_phone">请输入手机号</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="hint_password_confirm">请确认密码</string>
+    <string name="hint_name">请输入昵称</string>
+    <string name="hint_imei">请输入设备编号IMEI</string>
+    <string name="hint_image_code">请输入图形验证码</string>
+    <string name="hint_phone_code">请输入短信验证码</string>
+    <string name="hint_get_phone_code">获取验证码</string>
+    <string name="hint_password_old">请输入旧密码</string>
+    <string name="hint_password_new">请输入新密码</string>
+    <!-- 提示语 -->
+
+    <string name="cue_is_no_correct">格式不正确</string>
+    <string name="cue_set_name">输入你想要的名称</string>
+    <string name="cue_not_date">暂无数据</string>
+    <string name="cue_ble_error_1">查询产品序列号未有结果，已自动断开连接，请购买正品设备</string>
+    <string name="cue_ble_error_2">您连接的设备不是正规厂家生产，已自动断开连接，请购买正品设备</string>
+    <string name="cue_ble_break">是否断开蓝牙？</string>
+    <string name="cue_please_wait">请稍候</string>
+    <string name="cue_please_wait_angle">正在调整图片请稍候</string>
+    <string name="device_info_unbound_confirm">是否解除绑定当前设备？</string>
+    <string name="cue_no_up_apk">已是最新版本！</string>
+    <string name="cue_up_apk">发现新版本是否立即更新</string>
+    <string name="cue_BluetoothConnect_wait">请连接设备</string>
+    <string name="cue_BluetoothEnable_wait">请打开蓝牙</string>
+    <string name="cue_Location_wait">请先打开位置权限</string>
+    <string name="cue_login_wait">请先登录帐号</string>
+    <string name="cue_logoutwx_wait">是否解除微信绑定?</string>
+    <string name="cue_successful">成功</string>
+    <string name="cue_fail">失败</string>
+    <string name="cue_max">抱歉奥，不能再添加了，我是有底线的</string>
+    <string name="cue_up_successful">更新成功</string>
+    <string name="cue_up_error">更新失败</string>
+    <string name="cue_send_successful">发送成功</string>
+    <string name="cue_send_error">发送失败</string>
+    <string name="cue_login_successful">登录成功</string>
+    <string name="cue_edit_successful">修改成功</string>
+    <string name="cue_bonded_successful">绑定成功</string>
+    <string name="cue_unbonded_successful">解绑成功</string>
+    <string name="cue_click_again_to_exit">再按一次退出程序</string>
+    <string name="cue_no_empty">不能为空</string>
+    <string name="cue_nickname_is_no_empty">名称不能为空</string>
+    <string name="cue_nickname_is_no_Emoji">名称不支持表情</string>
+    <string name="cue_phone_is_no_empty">手机号码不能为空</string>
+    <string name="cue_phone_is_no_correct">手机号码格式不正确</string>
+    <string name="cue_phone_is_no_Binding">请先绑定设备！</string>
+    <string name="cue_password_is_no_error">旧密碼错误</string>
+    <string name="cue_password_is_no_empty">密碼不能为空</string>
+    <string name="cue_password_is_no_correct">密碼长度不正确</string>
+    <string name="cue_password_is_no_16_bits">密码不能超过16位</string>
+    <string name="cue_is_no_bits">不能超过%d位</string>
+    <string name="cue_name_is_no_16_bits">姓名不能超过16位</string>
+    <string name="cue_code_is_no_6_bits">验证码不能超过6位</string>
+    <string name="cue_password_is_no_confirm">两次密碼不一致</string>
+    <string name="cue_macid_is_no_empty">设备号不能为空</string>
+    <string name="cue_macid_is_no_correct">设备号长度不正确</string>
+    <string name="cue_macid_is_error">设备号格式不正确</string>
+    <string name="cue_code_is_no_empty">验证码不能为空</string>
+    <string name="cue_code_is_no_agreement">请阅读并确定接受服务条款，否则不能完成注册</string>
+    <string name="cue_no_network">网络无法连接</string>
+    <string name="cue_no_Invalid">帐号已被登录,请重新登录</string>
+    <string name="cue_network_anomaly">网络异常</string>
+    <string name="cue_no_device_info">未获取到设备信息</string>
+    <string name="viewfinderview_status_text1">请将设备条形码置于方框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <string name="msg_error_google_play_services_failed">Google Play Services不可用</string>
+    <string name="msg_error_weixin">未找到微信app</string>
+    <string name="title_activity_photo_edit">PhotoEditActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_photo_list">PhotoListActivity</string>
+    <string name="title_activity_photo_yu_lan">PhotoYuLanActivity</string>
+
+</resources>

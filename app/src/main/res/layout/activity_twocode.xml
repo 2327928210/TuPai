@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_ef"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.yanzhenjie.zbar.camera.CameraPreview
+            android:id="@+id/capture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.yanzhenjie.zbar.camera.CameraPreview>
+
+        <com.haoke.picturepat.view.TwoCodeView
+            android:id="@+id/TwoCodeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

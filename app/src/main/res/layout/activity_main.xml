@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtv="http://schemas.android.com/apk/res/com.haoke.picturepat"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_ef"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_myinfo"
+        style="@style/title_style"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/title_lin"
+            style="@style/title_style"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <RelativeLayout
+               
+                android:id="@+id/title_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" >
+
+                <ImageView
+                    android:id="@+id/ima_left"
+                    android:layout_width="@dimen/layout_x_50"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/switch_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/layout_y_20" />
+
+                <RelativeLayout
+                    android:id="@+id/bt_ble"
+                    android:layout_width="@dimen/layout_x_60"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/ck_ble"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:button="@drawable/main_ble"
+                        android:clickable="false" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" >
+
+                <ImageView
+                    android:id="@+id/ima_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/layout_y_18"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/main_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_120"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_60"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_x_1"
+                    android:background="@color/gray_a" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/layout_x_60"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.haoke.picturepat.view.RichText
+                        android:id="@+id/tv_music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/main_music"
+                        android:textColor="@color/gray_6"
+                        android:textSize="@dimen/layout_x_15"
+                        android:visibility="gone"
+                        rtv:icon_direction="top"
+                        rtv:icon_height="@dimen/layout_y_30"
+                        rtv:icon_src_normal="@drawable/main_music_n"
+                        rtv:icon_src_pressed="@drawable/main_music_p"
+                        rtv:icon_width="@dimen/layout_y_30"
+                        rtv:text_color_pressed="@color/blue_p" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/layout_x_60"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.haoke.picturepat.view.RichText
+                        android:id="@+id/tv_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/main_camera"
+                        android:textColor="@color/gray_6"
+                        android:textSize="@dimen/layout_x_15"
+                        android:visibility="gone"
+                        rtv:icon_direction="top"
+                        rtv:icon_height="@dimen/layout_y_30"
+                        rtv:icon_src_normal="@drawable/main_camera_n"
+                        rtv:icon_src_pressed="@drawable/main_camera_p"
+                        rtv:icon_width="@dimen/layout_y_30"
+                        rtv:text_color_pressed="@color/blue_p" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_mic"
+                android:layout_width="@dimen/layout_y_100"
+                android:layout_height="@dimen/layout_y_100"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/layout_x_10"
+                android:background="@drawable/main_mic"
+                android:text="" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

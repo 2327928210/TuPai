@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_baidu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_80"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/userinfo_text_style"
+                android:text="@string/setmap_baidu" />
+
+            <CheckBox
+                android:id="@+id/ck_baidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:button="@drawable/comm_checkbox_selector"
+                android:checked="true"
+                android:clickable="false"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:background="@color/gray_a" />
+
+        <RelativeLayout
+            android:id="@+id/rel_gaode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_80"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/userinfo_text_style"
+                android:text="@string/setmap_gaode" />
+
+            <CheckBox
+                android:id="@+id/ck_gaode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:button="@drawable/comm_checkbox_selector"
+                android:checked="true"
+                android:clickable="false"
+                android:text="" />
+
+            <Button
+                android:id="@+id/bt_gaode"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_50"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@color/green"
+                android:text="下载"
+                android:textColor="@color/white"
+                android:textSize="@dimen/layout_x_20" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

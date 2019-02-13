@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.haoke.picturepat.edittext.PhoneEdit
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/hint_phone"
+            android:padding="@dimen/layout_x_20"
+            android:textSize="@dimen/layout_x_18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_x_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:layout_marginRight="@dimen/layout_x_20"
+            android:background="@color/gray_b" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <com.haoke.picturepat.edittext.CodeEdit
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/hint_image_code"
+                android:padding="@dimen/layout_x_20"
+                android:textSize="@dimen/layout_x_18" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/layout_x_130"
+                android:layout_height="@dimen/layout_y_40"
+                android:layout_marginRight="@dimen/layout_x_30"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_x_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:layout_marginRight="@dimen/layout_x_20"
+            android:background="@color/gray_b"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.haoke.picturepat.edittext.CodeEdit
+                android:id="@+id/ed_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/hint_phone_code"
+                android:inputType="number"
+                android:padding="@dimen/layout_x_20"
+                android:textSize="@dimen/layout_x_18" >
+
+                <requestFocus />
+            </com.haoke.picturepat.edittext.CodeEdit>
+
+            <Button
+                android:id="@+id/bt_code"
+                android:layout_width="@dimen/layout_x_130"
+                android:layout_height="@dimen/layout_y_40"
+                android:layout_marginRight="@dimen/layout_x_30"
+                android:background="@drawable/shape_white_blue"
+                android:text="@string/hint_get_phone_code"
+                android:textColor="@drawable/register_blue_bt"
+                android:textSize="@dimen/layout_x_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_x_1"
+            android:background="@color/gray_b" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="@dimen/layout_x_400"
+        android:layout_height="@dimen/layout_y_55"
+        android:layout_marginTop="@dimen/layout_y_50"
+        android:background="@drawable/shape_login_bt"
+        android:text="@string/register_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/layout_x_22" />
+
+</LinearLayout>

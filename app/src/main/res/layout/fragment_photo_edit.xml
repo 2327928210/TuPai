@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtv="http://schemas.android.com/apk/res/com.haoke.picturepat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_myinfo"
+        style="@style/title_style"
+        android:background="@color/blue_n" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rel_finish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" >
+
+                <ImageView
+                    android:layout_width="@dimen/layout_x_50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/layout_x_10"
+                    android:src="@drawable/switch_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/layout_x_35"
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="14"
+                android:gravity="center"
+                android:text="@string/photo_main_edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/layout_y_23" />
+
+            <LinearLayout
+                android:id="@+id/lin_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:paddingBottom="@dimen/layout_y_3"
+                    android:paddingLeft="@dimen/layout_x_10"
+                    android:paddingRight="@dimen/layout_x_10"
+                    android:paddingTop="@dimen/layout_y_3"
+                    android:text="@string/photo_main_preview"
+                    android:textColor="#00b8ff"
+                    android:textSize="@dimen/layout_y_18" />
+
+                <!--
+                    <ImageView
+                    android:layout_width="@dimen/layout_x_30"
+                    android:layout_height="@dimen/layout_x_30"
+                    android:src="@drawable/photo_edit_next" />
+
+                -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/layout_x_25"
+        android:paddingRight="@dimen/layout_x_25"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/layout_x_25" >
+
+            <ImageView
+                android:id="@+id/img_paizhao"
+                android:layout_width="@dimen/layout_x_430"
+                android:layout_height="@dimen/layout_x_430"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/gallery_pick_photo" />
+
+            <RelativeLayout
+                android:id="@+id/rel_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_x_5"
+                android:layout_marginTop="@dimen/layout_x_15"
+                android:background="@drawable/shape_gray"
+                android:minWidth="@dimen/layout_x_250"
+                android:paddingBottom="@dimen/layout_x_5"
+                android:paddingLeft="@dimen/layout_x_10"
+                android:paddingRight="@dimen/layout_x_15"
+                android:paddingTop="@dimen/layout_x_5" >
+
+                <com.haoke.picturepat.view.RichText
+                    android:id="@+id/rt_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/layout_x_5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/layout_x_400"
+                    android:text=""
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/layout_x_18"
+                    rtv:icon_direction="left"
+                    rtv:icon_height="@dimen/layout_y_25"
+                    rtv:icon_src_normal="@drawable/photo_edit_gps"
+                    rtv:icon_width="@dimen/layout_y_25" />
+            </RelativeLayout>
+
+            <com.haoke.picturepat.view.RichText
+                android:id="@+id/rt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/layout_x_5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/layout_x_5"
+                android:paddingLeft="@dimen/layout_x_10"
+                android:paddingRight="@dimen/layout_x_5"
+                android:paddingTop="@dimen/layout_x_5"
+                android:text=" "
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_20"
+                rtv:icon_direction="left"
+                rtv:icon_height="@dimen/layout_y_25"
+                rtv:icon_src_normal="@drawable/photo_edit_date"
+                rtv:icon_width="@dimen/layout_y_25" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_60"
+                android:layout_margin="@dimen/layout_x_5"
+                android:layout_marginTop="@dimen/layout_x_50"
+                android:background="@drawable/background_xuxian"
+                android:padding="@dimen/layout_x_0" >
+
+                <EditText
+                    android:id="@+id/ed_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="标题"
+                     android:maxLength="32"
+                    android:padding="@dimen/layout_x_5"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/layout_x_23" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/layout_y_20"
+                android:layout_height="@dimen/layout_y_230"
+                android:layout_margin="@dimen/layout_x_5"
+                android:layout_marginTop="@dimen/layout_x_15"
+                android:background="@drawable/background_xuxian"
+                android:padding="@dimen/layout_x_0" >
+
+                <EditText
+                    android:id="@+id/ed_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="top"
+                    android:hint="对事物进行描述"
+                    android:maxLength="500"
+                    android:padding="@dimen/layout_x_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/layout_x_20" >
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/layout_x_25"
+        android:paddingRight="@dimen/layout_x_25"
+        android:paddingTop="@dimen/layout_x_25"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/ed_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:hint="@string/photo_main_addtag"
+            android:padding="@dimen/layout_x_5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_20" >
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:background="@color/gray_a" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_150"
+            android:layout_marginTop="@dimen/layout_x_10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/ed_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/photo_main_shar_text"
+                    android:minHeight="@dimen/layout_y_150"
+                    android:padding="@dimen/layout_x_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/layout_x_20" />
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvGalleryImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

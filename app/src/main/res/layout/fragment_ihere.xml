@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtv="http://schemas.android.com/apk/res/com.haoke.picturepat"
+    style="@style/fragment_style"
+    android:background="@drawable/music_bg_2"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.haoke.picturepat.view.RichText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/layout_x_15"
+            android:gravity="center"
+            android:text="@string/main_camera"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_x_30"
+            rtv:icon_direction="left"
+            rtv:icon_height="@dimen/layout_y_30"
+            rtv:icon_src_normal="@drawable/photo_camera"
+            rtv:icon_width="@dimen/layout_y_30"
+            rtv:text_color_pressed="@color/gray_b"
+            rtv:text_color_unable="@color/gray_b" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/photo_main_ico" />
+
+    </RelativeLayout>
+
+</LinearLayout>

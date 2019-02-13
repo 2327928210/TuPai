@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/poprel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="@dimen/layout_x_150"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:padding="@dimen/layout_x_15"
+        android:text="@string/userinfo_we_share"
+        android:textColor="@color/black"
+        android:textSize="@dimen/layout_x_20" />
+
+    <View
+        android:layout_width="@dimen/layout_x_150"
+        android:layout_height="@dimen/layout_x_1"
+        android:background="@color/gray_a" />
+    
+     <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="@dimen/layout_x_150"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:padding="@dimen/layout_x_15"
+        android:text="@string/userinfo_we_edit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/layout_x_20" />
+
+    <View
+        android:layout_width="@dimen/layout_x_150"
+        android:layout_height="@dimen/layout_x_1"
+        android:background="@color/gray_a" />
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="@dimen/layout_x_150"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:padding="@dimen/layout_x_15"
+        android:text="@string/other_delete"
+        android:textColor="@color/red"
+        android:textSize="@dimen/layout_x_20" />
+
+</LinearLayout>

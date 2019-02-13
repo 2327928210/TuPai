@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GalleryPickActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_gallery_pick_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_n"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/title_style"
+            android:layout_width="match_parent"
+            android:background="@color/blue_n" >
+
+            <LinearLayout
+                android:id="@+id/btnGalleryPickBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/switch_back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvGalleryFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/gallery_pick_dropdown_white"
+                android:gravity="center"
+                android:text="@string/gallery_all_folder"
+                android:textColor="@color/gallery_white"
+                android:textSize="@dimen/layout_x_20" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvGalleryImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gallery_white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_70"
+            android:background="@color/white"
+            android:padding="@dimen/layout_x_10" >
+
+            <TextView
+                android:id="@+id/tvFinish"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_50"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_blue_bt"
+                android:gravity="center"
+                android:padding="@dimen/layout_x_10"
+                android:text="@string/gallery_finish"
+                android:textColor="@color/gallery_white"
+                android:textSize="@dimen/layout_x_18" />
+
+            <TextView
+                android:id="@+id/tv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="@dimen/layout_x_10"
+                android:text="@string/gallery_preview"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_18" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 图片轮播 -->
+
+    <RelativeLayout
+        android:id="@+id/m_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.haoke.picturepat.view.MyViewPager
+            android:id="@+id/m_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" >
+        </com.haoke.picturepat.view.MyViewPager>
+
+        <RelativeLayout
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent_main_color" >
+
+            <RelativeLayout
+                style="@style/title_style"
+                android:layout_width="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/btnGalleryPickBack_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:src="@drawable/switch_back" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_ck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+
+                    <CheckBox
+                        android:id="@+id/chkGalleryPhotoSelector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/gallery_pick_select_unchecked"
+                        android:clickable="false"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_70"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_a"
+            android:padding="@dimen/layout_x_10" >
+
+            <TextView
+                android:id="@+id/tvFinish_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_50"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_blue_bt"
+                android:gravity="center"
+                android:padding="@dimen/layout_x_10"
+                android:text="@string/gallery_finish"
+                android:textColor="@color/gallery_white"
+                android:textSize="@dimen/layout_x_18" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_play_page_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play_page_default_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_50"
+            android:background="@drawable/title_bg"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/layout_y_50"
+                android:layout_height="@dimen/layout_y_50"
+                android:scaleType="centerInside"
+                android:src="@drawable/switch_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_50"
+                android:layout_marginLeft="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="无音乐"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/layout_x_20" />
+
+                <TextView
+                    android:id="@+id/tv_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_a"
+                    android:textSize="@dimen/layout_x_18" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_50p"
+            android:orientation="vertical" >
+
+            <com.haoke.picturepat.view.AlbumCoverView
+                android:id="@+id/album_cover_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                layout="@layout/include_play_page_controller" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

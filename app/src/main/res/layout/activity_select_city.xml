@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rtv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_myinfo"
+        style="@style/title_style"
+        android:background="@color/blue_n" >
+
+        <LinearLayout
+            android:id="@+id/title_lin"
+            style="@style/title_style"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <RelativeLayout
+                android:id="@+id/title_choose_city"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/ima_left"
+                    android:layout_width="@dimen/layout_x_50"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:background="@drawable/switch_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/layout_y_5"
+                android:layout_marginTop="@dimen/layout_y_5"
+                android:layout_weight="11"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/shape_blue_p" >
+
+                <com.haoke.picturepat.view.RichText
+                    android:id="@+id/rt_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/layout_x_10"
+                    android:layout_marginRight="@dimen/layout_x_10"
+                    android:gravity="center"
+                    rtv:icon_direction="left"
+                    rtv:icon_height="@dimen/layout_y_30"
+                    rtv:icon_src_normal="@drawable/photo_main_search_n"
+                    rtv:icon_src_pressed="@drawable/photo_main_search_p"
+                    rtv:icon_width="@dimen/layout_y_30" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/searchkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rt_search"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:hint="@string/photo_main_map_text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@drawable/textcursor_white"
+                    android:textSize="@dimen/layout_x_20"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/searchView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rt_search"
+                    android:background="@color/transparent"
+                    android:hint="@string/photo_main_city_name"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@drawable/textcursor_white"
+                    android:textSize="@dimen/layout_x_20" >
+
+                    <!--<requestFocus />-->
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" >
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_myinfo"
+        android:background="@color/color_city"></android.support.v7.widget.RecyclerView>
+
+    <com.mcxtzhang.indexlib.IndexBar.widget.IndexBar
+        android:id="@+id/indexBar"
+        android:layout_width="24dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        app:indexBarPressBackground="#00ffffff"
+        app:indexBarTextSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvSideBarHint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_side_bar_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:visibility="gone"
+        tools:text="A"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/search_view"
+        android:layout_below="@+id/rl_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="#77000000"
+            />
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+          ></ListView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

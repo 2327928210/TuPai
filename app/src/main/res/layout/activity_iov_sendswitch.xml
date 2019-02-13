@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rel_power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_info_Oil_break_power_off"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <RelativeLayout
+                android:id="@+id/MySwitch_power"
+                android:layout_width="@dimen/layout_y_69"
+                android:layout_height="@dimen/layout_y_44"
+                android:background="@drawable/switch_off" >
+
+              
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_defense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_info_defense"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <RelativeLayout
+                android:id="@+id/MySwitch_defense"
+                android:layout_width="@dimen/layout_y_69"
+                android:layout_height="@dimen/layout_y_44"
+                android:background="@drawable/switch_off" >
+
+             
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_door"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_alram_door"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <RelativeLayout
+                android:id="@+id/MySwitch_door"
+                android:layout_width="@dimen/layout_y_69"
+                android:layout_height="@dimen/layout_y_44"
+                android:background="@drawable/switch_on" >
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_alram_acc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <RelativeLayout
+                android:id="@+id/MySwitch_acc"
+                android:layout_width="@dimen/layout_y_69"
+                android:layout_height="@dimen/layout_y_44"
+                android:background="@drawable/switch_on" >
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_blind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_alram_blind"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <RelativeLayout
+                android:id="@+id/MySwitch_blind"
+                android:layout_width="@dimen/layout_y_69"
+                android:layout_height="@dimen/layout_y_44"
+                android:background="@drawable/switch_on" >
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_electricity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_alram_electricity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <RelativeLayout
+                android:id="@+id/MySwitch_electricity"
+                android:layout_width="@dimen/layout_y_69"
+                android:layout_height="@dimen/layout_y_44"
+                android:background="@drawable/switch_on" >
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_displacement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_alram_displacement"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <RelativeLayout
+                android:id="@+id/MySwitch_displacement"
+                android:layout_width="@dimen/layout_y_69"
+                android:layout_height="@dimen/layout_y_44"
+                android:background="@drawable/switch_on" >
+
+               
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_jones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_alram_jones"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <RelativeLayout
+                android:id="@+id/MySwitch_jones"
+                android:layout_width="@dimen/layout_y_69"
+                android:layout_height="@dimen/layout_y_44"
+                android:background="@drawable/switch_on" >
+
+              
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_shock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:background="@drawable/white_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/device_alram_shock"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <ImageView
+                android:layout_width="@dimen/layout_y_30"
+                android:layout_height="@dimen/layout_y_30"
+                android:src="@drawable/register_next" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_60"
+            android:background="@drawable/white_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_x_40"
+            android:paddingRight="@dimen/layout_x_20" >
+
+            <TextView
+                android:id="@+id/textView_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="@string/device_config_mode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <ImageView
+                android:layout_width="@dimen/layout_y_30"
+                android:layout_height="@dimen/layout_y_30"
+                android:src="@drawable/register_next" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:background="@color/gray_a" />
+    </LinearLayout>
+
+</LinearLayout>

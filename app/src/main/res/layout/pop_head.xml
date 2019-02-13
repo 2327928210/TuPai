@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_x_10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/but_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_bg"
+                android:gravity="center"
+                android:padding="@dimen/layout_x_15"
+                android:text="@string/userinfo_photo"
+                android:textColor="@color/blue_n" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_x_1"
+                android:background="@color/gray_a" />
+
+            <TextView
+                android:id="@+id/but_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_bg"
+                android:gravity="center"
+                android:padding="@dimen/layout_x_15"
+                android:text="@string/userinfo_camera"
+                android:textColor="@color/blue_n" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_x_1"
+                android:background="@color/gray_a" />
+
+            <TextView
+                android:id="@+id/but_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_bg"
+                android:gravity="center"
+                android:padding="@dimen/layout_x_15"
+                android:text="@string/userinfo_Album"
+                android:textColor="@color/blue_n"
+                android:textSize="@dimen/layout_x_20" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edittext" >
+
+            <TextView
+                android:id="@+id/but_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_bg"
+                android:gravity="center"
+                android:padding="@dimen/layout_x_15"
+                android:text="@string/other_cancel"
+                android:textColor="@color/blue_n"
+                android:textSize="@dimen/layout_x_20" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/transparent_6" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_white"
+            android:gravity="center"
+            android:padding="@dimen/layout_x_20" >
+
+            <com.haoke.picturepat.view.AVLoadingIndicatorView
+                android:layout_width="@dimen/layout_x_45"
+                android:layout_height="@dimen/layout_x_45"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:text="@string/cue_please_wait_angle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

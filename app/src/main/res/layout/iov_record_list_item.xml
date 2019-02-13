@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_ef"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_x_15" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_80"
+        android:background="@drawable/shape_white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/layout_x_10" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/layout_x_30"
+            android:layout_height="@dimen/layout_x_40"
+            android:src="@drawable/iov_main_recore_ico" />
+
+        <View
+            android:layout_width="@dimen/layout_x_1"
+            android:layout_height="@dimen/layout_x_50"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_marginRight="@dimen/layout_x_10"
+            android:background="@color/gray_a" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_17" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_x_5"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_bt_bg"
+            android:gravity="center"
+            android:padding="@dimen/layout_x_5" >
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/layout_x_5"
+                android:text="60秒"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_18" />
+
+            <TextView
+                android:id="@+id/tv_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_x_5"
+                android:text="点击播放"
+                android:textColor="@color/white"
+                android:textSize="@dimen/layout_x_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

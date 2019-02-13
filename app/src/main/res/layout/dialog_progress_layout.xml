@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/layout_x_20"
+    android:paddingRight="@dimen/layout_x_20" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_100"
+        android:background="@drawable/shape_bg_dialog"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/layout_y_100"
+            android:layout_height="@dimen/layout_y_100" >
+
+            <!-- 水平进度条 -->
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/layout_y_80"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_centerInParent="true"
+                android:progress="0"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/tv_proress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/layout_x_20" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/layout_x_30"
+            android:layout_marginLeft="@dimen/layout_x_30"
+            android:gravity="center_vertical"
+            android:text="@string/cue_please_commitwait"
+            android:textColor="@color/gray_9"
+            android:textSize="@dimen/layout_x_18" />
+    </LinearLayout>
+
+</FrameLayout>

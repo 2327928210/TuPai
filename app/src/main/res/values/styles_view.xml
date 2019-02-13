@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="title_style">
+        <item name="android:layout_height">@dimen/layout_y_50</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="fragment_style">
+        <item name="android:layout_height">@dimen/layout_y_190</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">@dimen/layout_x_5</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="userinfo_lin_style">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/white_bg</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="userinfo_text_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layout_x_15</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/layout_x_20</item>
+    </style>
+
+</resources>

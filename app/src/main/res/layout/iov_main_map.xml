@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </com.baidu.mapapi.map.MapView>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="@dimen/layout_x_50"
+        android:layout_height="@dimen/layout_x_100"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_map_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/map_zoom_add" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_marginLeft="@dimen/layout_x_5"
+            android:layout_marginRight="@dimen/layout_x_5"
+            android:background="@color/gray_b" />
+
+        <RelativeLayout
+            android:id="@+id/rel_map_sub"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/map_zoom_sub" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.haoke.picturepat.view.MyViewPager
+        android:id="@+id/m_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_215"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/layout_x_10"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" >
+    </com.haoke.picturepat.view.MyViewPager>
+
+    <RelativeLayout
+        android:id="@+id/rel_car"
+        android:layout_width="@dimen/layout_x_50"
+        android:layout_height="@dimen/layout_x_50"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lin"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white_bg" >
+
+        <Button
+            android:id="@+id/bt_car"
+            android:layout_width="@dimen/layout_x_40"
+            android:layout_height="@dimen/layout_x_40"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/refresh1"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_many"
+        android:layout_width="@dimen/layout_x_50"
+        android:layout_height="@dimen/layout_x_50"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rel_car"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <CheckBox
+            android:id="@+id/ck_many"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_car_many"
+            android:button="@null"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

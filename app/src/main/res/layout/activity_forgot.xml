@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_ef"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_65"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/register_1"
+            android:textColor="@drawable/blue_text"
+            android:textSize="@dimen/layout_x_20" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_x_30"
+            android:layout_height="@dimen/layout_x_30"
+            android:src="@drawable/register_next" />
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/register_2"
+            android:textColor="@drawable/blue_text"
+            android:textSize="@dimen/layout_x_20" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_x_30"
+            android:layout_height="@dimen/layout_x_30"
+            android:src="@drawable/register_next"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/register_3"
+            android:textColor="@drawable/blue_text"
+            android:textSize="@dimen/layout_x_20"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <com.haoke.picturepat.view.MyViewPager
+        android:id="@+id/m_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/layout_x_20"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" >
+    </com.haoke.picturepat.view.MyViewPager>
+
+</LinearLayout>

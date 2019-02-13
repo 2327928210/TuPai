@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:soundEffectsEnabled="false" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/comm_dialog_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:soundEffectsEnabled="false" >
+
+        <TextView
+            android:id="@+id/aram_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:soundEffectsEnabled="false"
+            android:text="标题"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/> -->
+
+        <TextView
+            android:id="@+id/aram_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingTop="0dp"
+            android:soundEffectsEnabled="false"
+            android:text="内容"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/aram_cancl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10sp"
+            android:soundEffectsEnabled="false"
+            android:text="确定"
+            android:textColor="@color/voice_bg"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

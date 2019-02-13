@@ -1,0 +1,246 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".photo.activity.PhotoListActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_50"
+        android:background="@color/blue_n" >
+
+        <RelativeLayout
+            android:id="@+id/rel_finish"
+            android:layout_width="@dimen/layout_x_100"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_y_20" >
+
+            <ImageView
+                android:layout_width="@dimen/layout_x_50"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/switch_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lin_next"
+            android:layout_width="@dimen/layout_x_100"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/layout_x_16"
+            android:layout_marginTop="@dimen/layout_y_20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#fff"
+                android:paddingBottom="@dimen/layout_y_3"
+                android:paddingLeft="@dimen/layout_x_10"
+                android:paddingRight="@dimen/layout_x_10"
+                android:paddingTop="@dimen/layout_y_3"
+                android:text="@string/photo_list_syhd"
+                android:textColor="#00b8ff"
+                android:textSize="@dimen/layout_y_18" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_y_20"
+            android:layout_toLeftOf="@+id/lin_next"
+            android:layout_toRightOf="@+id/rel_finish"
+            android:gravity="center"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:text="照片浏览"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_y_23" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_80" >
+
+        <RelativeLayout
+            android:id="@+id/photo_list_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+
+            <LinearLayout
+                android:id="@+id/photo_list_share"
+                android:layout_width="@dimen/layout_x_60"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/layout_x_30"
+                    android:layout_height="@dimen/layout_x_25"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/layout_x_2"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photo_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/layout_x_0"
+                    android:layout_marginTop="@dimen/layout_x_3"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:text="分享"
+                    android:textColor="#999"
+                    android:textSize="@dimen/layout_x_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photo_list_daohang"
+                android:layout_width="@dimen/layout_x_60"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_x_15"
+                android:layout_toRightOf="@+id/photo_list_share"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/layout_x_30"
+                    android:layout_height="@dimen/layout_x_30"
+                    android:gravity="center"
+                    android:src="@drawable/loc_gps_btn"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/layout_x_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_x_3"
+                    android:maxLines="1"
+                    android:text="导航"
+                    android:textColor="#999"
+                    android:textSize="@dimen/layout_x_16" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/photo_list_rl"
+            android:padding="@dimen/layout_x_5" >
+
+            <TextView
+                android:id="@+id/photo_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_x_15"
+                android:layout_marginTop="@dimen/layout_x_10"
+                android:singleLine="true"
+                android:textSize="@dimen/layout_x_22"
+                android:text="@string/photo_list_syhd"
+                android:textColor="#333" ></TextView>
+
+                <RelativeLayout
+                    android:id="@+id/edit_rel"
+                     android:layout_marginLeft="@dimen/layout_x_15"
+                    android:layout_below="@+id/photo_list_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_x_30" >
+
+                    <ImageView
+                        android:id="@+id/edit_image"
+                        android:layout_width="@dimen/layout_x_22"
+                        android:layout_height="@dimen/layout_x_22"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/layout_x_3"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/photo_edit" />
+
+                    <TextView
+                        android:id="@+id/edit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layout_x_10"
+                        android:layout_marginTop="@dimen/layout_x_1"
+                        android:layout_toRightOf="@+id/edit_image"
+                        android:text="编辑"
+                        android:textColor="#999"
+                        android:textSize="@dimen/layout_x_18" />
+                </RelativeLayout>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_1"
+        android:background="#eee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rel_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_x_70"
+            android:layout_alignParentBottom="true"
+            android:background="#fff" >
+
+            <View
+                android:id="@+id/view_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:id="@+id/rel_cam"
+                android:layout_width="@dimen/layout_x_46"
+                android:layout_height="@dimen/layout_x_38"
+                android:layout_below="@+id/view_bottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/layout_x_12"
+                android:background="@drawable/photo_camer" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/layout_x_16"
+                    android:text="@string/photo_main_map_Photograph"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/layout_x_12"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/photo_list_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rel_camera"
+            android:divider="#eee"
+            android:dividerHeight="@dimen/layout_y_1"
+            android:gravity="fill"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            ptr:ptrMode="both" >
+        </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+    </RelativeLayout>
+
+</LinearLayout>

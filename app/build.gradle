@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.haoke.picturepat"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 17
+        versionName "PicturePat_01.00.18"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'apk.hfc'
+            keyPassword 'a1b2c3d4'
+            storeFile file('apk.clw')
+            storePassword 'a1b2c3d4'
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    //    provided files(getLayoutLibPath()) //导入SDK中的自带的layoutlib.jar，解决项目中找不到android.os.properties类。
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    //    compile 'com.android.support:multidex:1.0.0'
+    compile project(':library')
+    compile project(':indexlib')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

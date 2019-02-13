@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtv="http://schemas.android.com/apk/res/com.haoke.picturepat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_test"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_80"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:background="@drawable/white_bg"
+        android:gravity="center"
+        android:padding="@dimen/layout_x_10" >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="@dimen/layout_x_40"
+            android:layout_height="@dimen/layout_x_40"
+            android:layout_marginRight="@dimen/layout_x_10"
+            android:background="@drawable/alert_item_log"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="false"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_imei"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iov_main_list_imei"
+                android:textColor="@color/black"
+                android:textSize="@dimen/layout_x_20" />
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电子围栏报警"
+                android:textColor="@color/gray_a"
+                android:textSize="@dimen/layout_x_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_macname"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/gray_a"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:maxWidth="@dimen/layout_x_150"
+                android:paddingLeft="@dimen/layout_x_10"
+                android:paddingRight="@dimen/layout_x_10"
+                android:text="45465464546546544544"
+                android:textColor="@color/white"
+                android:textSize="@dimen/layout_x_18" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2018-01-01 17:17:17"
+                android:textColor="@color/gray_a"
+                android:textSize="@dimen/layout_x_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layout_x_1"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:background="@color/gray_a" />
+
+</LinearLayout>

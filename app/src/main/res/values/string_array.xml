@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="device_mode">
+        <item>连续追踪定位模式</item>
+        <item>间隔时间上传模式</item>
+        <item>固定时间点上传模式</item>
+    </string-array>
+    <string-array name="device_dr30_mode">
+        <item>休眠状态</item>
+        <item>省电追踪</item>
+        <item>实时追踪</item>
+    </string-array>
+    <string-array name="recording_time">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="wheel_hours">
+        <item>0小时</item>
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>3小时</item>
+        <item>4小时</item>
+        <item>5小时</item>
+        <item>6小时</item>
+        <item>7小时</item>
+        <item>8小时</item>
+        <item>9小时</item>
+        <item>10小时</item>
+        <item>11小时</item>
+        <item>12小时</item>
+    </string-array>
+    <string-array name="wheel_minutes">
+        <item>0分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>15分钟</item>
+        <item>20分钟</item>
+        <item>25分钟</item>
+        <item>30分钟</item>
+        <item>35分钟</item>
+        <item>40分钟</item>
+        <item>45分钟</item>
+        <item>50分钟</item>
+        <item>55分钟</item>
+    </string-array>
+    <string-array name="location_time">
+        <item>1秒</item>
+        <item>20秒</item>
+        <item>60秒</item>
+        <item>10分钟</item>
+        <item>1小时</item>
+    </string-array>
+
+    <string name="edit_rule">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890&#38;!&#033;@&#064;#&#035;$&#036;%&#037;^&#094;*&#042;</string>
+    <string name="edit_apn">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890.</string>
+
+</resources>

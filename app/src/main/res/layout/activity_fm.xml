@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_ef"
+    android:orientation="vertical"
+    android:soundEffectsEnabled="false" >
+
+    <include layout="@layout/layout_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_y_40"
+            android:layout_marginTop="@dimen/layout_y_40"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:soundEffectsEnabled="false"
+            android:weightSum="5" >
+
+            <ImageView
+                android:id="@+id/fmlauncher_freq_del"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/fmlauncher_fm_freqsub" />
+
+            <TextView
+                android:id="@+id/fmlauncher_freqvalue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ic_reg_success_item_n"
+                android:gravity="center"
+                android:soundEffectsEnabled="false"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/fmlauncher_freq_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/fmlauncher_fm_freqadd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:soundEffectsEnabled="false" >
+
+            <LinearLayout
+                android:id="@+id/fmboard_type2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:soundEffectsEnabled="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:soundEffectsEnabled="false" >
+
+                    <TextView
+                        android:id="@+id/fmset_btn1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="1"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_ef"
+                        android:soundEffectsEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/fmset_btn2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="2"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_ef"
+                        android:soundEffectsEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/fmset_btn3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="3"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_ef"
+                    android:soundEffectsEnabled="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:soundEffectsEnabled="false" >
+
+                    <TextView
+                        android:id="@+id/fmset_btn4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="4"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_ef"
+                        android:soundEffectsEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/fmset_btn5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="5"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_ef"
+                        android:soundEffectsEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/fmset_btn6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="6"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_ef"
+                    android:soundEffectsEnabled="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:soundEffectsEnabled="false" >
+
+                    <TextView
+                        android:id="@+id/fmset_btn7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="7"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_ef"
+                        android:soundEffectsEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/fmset_btn8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="8"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_ef"
+                        android:soundEffectsEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/fmset_btn9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="9"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_ef"
+                    android:soundEffectsEnabled="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:soundEffectsEnabled="false" >
+
+                    <TextView
+                        android:id="@+id/fmset_btn10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="0"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_ef"
+                        android:soundEffectsEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/fmset_btn13"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:soundEffectsEnabled="false"
+                        android:text="."
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="@dimen/layout_x_50" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_ef"
+                        android:soundEffectsEnabled="false" />
+
+                    <ImageView
+                        android:id="@+id/fmset_btn11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_iconbtn_press"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:soundEffectsEnabled="false"
+                        android:src="@drawable/ui3_myfm_delbtn"
+                        android:textColor="@drawable/fmset_btn_textcolor"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout> 
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fmset_btn12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_80"
+            android:background="@drawable/fmset_btn_ok"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@drawable/fmset_btn_textcolor_white"
+            android:textSize="@dimen/layout_x_40" />
+    </LinearLayout>
+
+</LinearLayout>

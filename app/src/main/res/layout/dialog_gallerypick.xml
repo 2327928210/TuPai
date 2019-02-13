@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.haoke.picturepat.view.MyViewPager
+        android:id="@+id/m_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" >
+    </com.haoke.picturepat.view.MyViewPager>
+
+    <RelativeLayout
+        style="@style/title_style"
+        android:layout_width="match_parent"
+        android:background="@color/transparent_main_color" >
+
+        <LinearLayout
+            android:id="@+id/btnGalleryPickBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/switch_back" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/chkGalleryPhotoSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:button="@drawable/gallery_pick_select_unchecked"
+            android:clickable="false"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+</RelativeLayout>

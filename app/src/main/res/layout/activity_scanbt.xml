@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_400"
+        android:background="@color/blue_1" >
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include1"
+            android:layout_centerHorizontal="true" >
+
+            <include layout="@layout/layout_titlebar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rel" >
+
+            <ImageView
+                android:layout_width="@dimen/layout_x_280"
+                android:layout_height="@dimen/layout_x_280"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/scan_bg" />
+
+            <ImageView
+                android:id="@+id/image_scanbg"
+                android:layout_width="@dimen/layout_x_280"
+                android:layout_height="@dimen/layout_x_280"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/scan_bg_2" />
+
+            <Button
+                android:id="@+id/bt_scan"
+                android:layout_width="@dimen/layout_x_280"
+                android:layout_height="@dimen/layout_x_280"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/scan_bt"
+                android:text="@string/ble_scan"
+                android:textColor="@color/blue_p"
+                android:textSize="@dimen/layout_x_30" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray_ef" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="@dimen/layout_x_5"
+            android:paddingLeft="@dimen/layout_x_10"
+            android:paddingTop="@dimen/layout_x_20"
+            android:text="@string/ble_device"
+            android:textSize="@dimen/layout_x_18" />
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

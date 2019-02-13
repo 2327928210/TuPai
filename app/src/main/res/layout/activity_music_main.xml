@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtv="http://schemas.android.com/apk/res/com.haoke.picturepat"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_ef"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/music_phone"
+                    android:textColor="@drawable/blue_text"
+                    android:textSize="@dimen/layout_x_22" />
+
+                <View
+                    android:layout_width="@dimen/layout_x_1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/layout_x_15"
+                    android:layout_marginTop="@dimen/layout_x_15"
+                    android:background="@color/gray_a" />
+
+                <RadioButton
+                    android:id="@+id/radio_usb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/music_u"
+                    android:textColor="@drawable/blue_text"
+                    android:textSize="@dimen/layout_x_22" />
+
+                <View
+                    android:layout_width="@dimen/layout_x_1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/layout_x_15"
+                    android:layout_marginTop="@dimen/layout_x_15"
+                    android:background="@color/gray_a" />
+
+                <RadioButton
+                    android:id="@+id/radio_network"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/music_network"
+                    android:textColor="@drawable/blue_text"
+                    android:textSize="@dimen/layout_x_22" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_x_15"
+            android:background="@color/gray_ef" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true" >
+
+                <com.haoke.picturepat.view.MyViewPager
+                    android:id="@+id/m_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/lin"
+                    android:background="@color/white"
+                    android:flipInterval="30"
+                    android:persistentDrawingCache="animation" >
+                </com.haoke.picturepat.view.MyViewPager>
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_y_70"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/music_bottom_bg"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/layout_x_5"
+                    android:paddingLeft="@dimen/layout_x_90"
+                    android:paddingRight="@dimen/layout_x_5" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <SeekBar
+                            android:id="@+id/sb_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layout_y_10"
+                            android:maxHeight="2dp"
+                            android:minHeight="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingStart="0dp"
+                            android:progressDrawable="@drawable/seek_main_music"
+                            android:thumb="@drawable/sb_bt"
+                            android:thumbOffset="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="@dimen/layout_x_5"
+                            android:paddingRight="@dimen/layout_x_5" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/bt_play"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/tv_music_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:lines="1"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/layout_x_18" />
+
+                                <TextView
+                                    android:id="@+id/tv_music_artist"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text=""
+                                    android:textColor="@color/gray_6"
+                                    android:textSize="@dimen/layout_x_18" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/bt_next"
+                                android:layout_width="@dimen/layout_x_40"
+                                android:layout_height="@dimen/layout_x_40"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/musicmain_next" />
+
+                            <Button
+                                android:id="@+id/bt_play"
+                                android:layout_width="@dimen/layout_x_30"
+                                android:layout_height="@dimen/layout_x_30"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/layout_x_10"
+                                android:layout_toLeftOf="@+id/bt_next"
+                                android:background="@drawable/musicmain_play_pause" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_cover"
+                    android:layout_width="@dimen/layout_y_70"
+                    android:layout_height="@dimen/layout_y_70"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/layout_y_5"
+                    android:layout_marginLeft="@dimen/layout_x_5"
+                    android:layout_marginRight="@dimen/layout_x_5"
+                    android:src="@drawable/music_cover" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

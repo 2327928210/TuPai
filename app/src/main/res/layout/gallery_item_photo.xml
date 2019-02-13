@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.yancy.gallerypick.widget.GalleryImageView
+        android:id="@+id/ivGalleryPhotoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.5dp"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/gallery_pick_photo" />
+
+    <View
+        android:id="@+id/vGalleryPhotoMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.5dp"
+        android:background="@color/gallery_photo_mask"
+        android:scaleType="centerInside"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rGalleryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp" >
+
+        <CheckBox
+            android:id="@+id/chkGalleryPhotoSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/gallery_pick_select_unchecked"
+            android:clickable="false"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_del"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:background="@drawable/cancel"
+        android:text=""
+        android:visibility="gone" />
+
+</FrameLayout>

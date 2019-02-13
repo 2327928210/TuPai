@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="viewfinderview_status_text1">请将设备条形码置于方框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+
+</resources>
