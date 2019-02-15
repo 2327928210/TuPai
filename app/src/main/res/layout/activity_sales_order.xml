@@ -5,59 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.haoke.picturepat.photo.activity.MyPicturePatActivity">
+    tools:context="com.haoke.picturepat.photo.activity.SalesOrderActivity">
 
     <include layout="@layout/layout_titlebar" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/layout_y_150"
-        android:background="@drawable/mypicture_background">
-
-        <ImageView
-            android:id="@+id/head_imageview"
-            android:layout_width="@dimen/layout_x_90"
-            android:layout_height="@dimen/layout_x_90"
-            android:layout_marginLeft="@dimen/layout_x_10"
-            android:layout_marginTop="@dimen/layout_x_10"
-            android:src="@drawable/ui2_user_icon1" />
-
-        <TextView
-            android:id="@+id/textView_userId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_x_10"
-            android:layout_marginTop="@dimen/layout_x_20"
-            android:layout_toRightOf="@+id/head_imageview"
-            android:text="18865522905"
-            android:textColor="@color/white"
-            android:textSize="@dimen/layout_x_20" />
-
-        <TextView
-            android:id="@+id/textView_userName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_userId"
-            android:layout_marginLeft="@dimen/layout_x_10"
-            android:layout_marginTop="@dimen/layout_x_10"
-            android:layout_toRightOf="@+id/head_imageview"
-            android:singleLine="true"
-            android:ellipsize="end"
-            android:text="昵称"
-            android:textColor="@color/white"
-            android:textSize="@dimen/layout_x_20" />
-
-        <TextView
-            android:id="@+id/textView_salesorder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:padding="@dimen/layout_x_10"
-            android:text="销售订单"
-            android:textColor="@color/white"
-            android:textSize="@dimen/layout_x_18" />
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -80,35 +30,24 @@
                 android:textSize="@dimen/layout_x_20" />
 
             <TextView
-                android:id="@+id/text_daifu"
-                android:layout_width="0dp"
-                android:padding="@dimen/layout_x_10"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="待付款"
-                android:textColor="#333"
-                android:textSize="@dimen/layout_x_20" />
-
-            <TextView
                 android:id="@+id/text_daifa"
                 android:layout_width="0dp"
-                android:padding="@dimen/layout_x_10"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:padding="@dimen/layout_x_10"
                 android:gravity="center"
                 android:text="待发货"
                 android:textColor="#333"
                 android:textSize="@dimen/layout_x_20" />
 
             <TextView
-                android:id="@+id/text_daishou"
+                android:id="@+id/text_yishou"
                 android:layout_width="0dp"
+                android:padding="@dimen/layout_x_10"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="@dimen/layout_x_10"
                 android:gravity="center"
-                android:text="待收货"
+                android:text="已收货"
                 android:textColor="#333"
                 android:textSize="@dimen/layout_x_20" />
         </LinearLayout>
@@ -132,24 +71,10 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/text_daifu_view"
-                android:visibility="invisible"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center">
-
-                <View
-                    android:layout_width="@dimen/layout_x_60"
-                    android:layout_height="match_parent"
-                    android:background="#f00" />
-            </RelativeLayout>
-
-            <RelativeLayout
                 android:id="@+id/text_daifa_view"
-                android:visibility="invisible"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:visibility="invisible"
                 android:layout_weight="1"
                 android:gravity="center">
 
@@ -160,10 +85,10 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/text_daishou_view"
+                android:id="@+id/text_yishou_view"
+                android:visibility="invisible"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:visibility="invisible"
                 android:layout_weight="1"
                 android:gravity="center">
 
@@ -172,6 +97,7 @@
                     android:layout_height="match_parent"
                     android:background="#f00" />
             </RelativeLayout>
+
         </LinearLayout>
 
         <View
@@ -181,10 +107,10 @@
             android:background="#aaa" />
     </RelativeLayout>
 
-     <ListView
-         android:id="@+id/listView"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
-     </ListView>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
 
 </LinearLayout>

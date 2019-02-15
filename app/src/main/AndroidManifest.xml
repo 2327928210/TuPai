@@ -470,7 +470,8 @@
             android:name=".photo.activity.SelectCityActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".photo.activity.SearchActivity" />
-        <activity android:name=".photo.activity.MyPicturePatActivity"></activity>
+        <activity android:name=".photo.activity.MyPicturePatActivity" />
+        <activity android:name=".photo.activity.SalesOrderActivity"></activity>
     </application>
 
 </manifest>

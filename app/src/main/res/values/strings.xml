@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name">图拍</string>
+    <string name="sales_order">销售订单</string>
+    <string name="search_delect">是否删除记录</string>
     <string name="language">CN</string>
     <string name="cue_please_commitwait">正在上传，请稍候...</string>
     <!-- other -->
@@ -99,10 +101,12 @@
     <string name="userinfo_map">设置地图</string>
     <string name="userinfo_mess">消息中心</string>
     <string name="userinfo_we">关于我们</string>
+    <string name="userinfo_mypicture">我的图拍</string>
     <string name="wechat">微信</string>
     <string name="friends">朋友圈</string>
     <string name="qq">QQ</string>
     <string name="more">更多应用</string>
+    <string name="userinfo_setting">设置</string>
     <string name="userinfo_we_share">分享</string>
     <string name="userinfo_we_edit">编辑</string>
     <string name="share_url_format" formatted="false">推荐你使用%s软件，软件下载地址:%s[%s]</string>

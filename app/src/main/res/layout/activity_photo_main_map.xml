@@ -32,6 +32,9 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:text="深圳"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:ellipsize="end"
                     android:textColor="@color/white"
                     android:textSize="@dimen/layout_x_18" />
 
@@ -47,6 +50,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/search_rl"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/layout_y_5"
@@ -61,6 +65,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/layout_x_10"
                     android:layout_marginRight="@dimen/layout_x_10"
+                    android:clickable="false"
                     android:gravity="center"
                     rtv:icon_direction="left"
                     rtv:icon_height="@dimen/layout_y_30"
@@ -78,13 +83,14 @@
                     android:background="@color/transparent"
                     android:ems="10"
                     android:hint="@string/photo_main_map_text"
+                    android:clickable="false"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
                     android:textCursorDrawable="@drawable/textcursor_white"
                     android:textSize="@dimen/layout_x_20"
                     android:visibility="gone" />
 
-                <EditText
+                <TextView
                     android:id="@+id/ed_sear"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,14 +100,14 @@
                     android:background="@color/transparent"
                     android:hint="@string/photo_main_map_text"
                     android:imeOptions="actionSearch"
+                    android:clickable="false"
                     android:singleLine="true"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
                     android:textCursorDrawable="@drawable/textcursor_white"
                     android:textSize="@dimen/layout_x_20" >
-
-                    <requestFocus />
-                </EditText>
+                    <!--<requestFocus />-->
+                </TextView>
             </RelativeLayout>
 
             <RelativeLayout

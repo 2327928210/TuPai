@@ -4,6 +4,8 @@
     <color name="color_city">#eeeeee</color>
     <color name="color_city_black">#000000</color>
     <color name="parttranslucent">#39000000</color>
+    <color name="color_333">#333</color>
+    <color name="color_f00">#f00</color>
     <!-- 纯色 -->
     <color name="transparent">#0FFF</color>
     <color name="transparent_6">#6000</color>
