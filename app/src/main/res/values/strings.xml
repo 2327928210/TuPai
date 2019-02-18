@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name">图拍</string>
+    <string name="sales_goodsprices">商品定价</string>
+    <string name="sales_sureorder">确认订单</string>
     <string name="sales_order">销售订单</string>
     <string name="search_delect">是否删除记录</string>
     <string name="language">CN</string>
@@ -102,6 +104,9 @@
     <string name="userinfo_mess">消息中心</string>
     <string name="userinfo_we">关于我们</string>
     <string name="userinfo_mypicture">我的图拍</string>
+    <string name="userinfo_addaddress">添加收货地址</string>
+    <string name="userinfo_address">收货地址</string>
+    <string name="userinfo_save">保存</string>
     <string name="wechat">微信</string>
     <string name="friends">朋友圈</string>
     <string name="qq">QQ</string>

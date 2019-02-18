@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haoke.picturepat.photo.activity.GoodsPriceActivity">
+
+    <include layout="@layout/layout_titlebar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginTop="@dimen/layout_x_20"
+        android:text="商品定价:"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/layout_x_22" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_40"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginTop="@dimen/layout_x_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:text="产品名称:"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_20" />
+
+        <EditText
+            android:id="@+id/goods_name"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_x_25"
+            android:textSize="@dimen/layout_x_20"
+            android:paddingLeft="@dimen/layout_x_3"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/text_custor"
+            android:background="@drawable/goods_background" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_40"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:text="产品规格:"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_20" />
+
+        <EditText
+            android:id="@+id/goods_guige"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_x_25"
+            android:cursorVisible="true"
+            android:textSize="@dimen/layout_x_20"
+            android:paddingLeft="@dimen/layout_x_3"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/text_custor"
+            android:background="@drawable/goods_background" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_40"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:text="产品数量:"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_20" />
+
+        <EditText
+            android:id="@+id/goods_shuliang"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_width="@dimen/layout_x_150"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:cursorVisible="true"
+            android:textSize="@dimen/layout_x_20"
+            android:paddingLeft="@dimen/layout_x_3"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@drawable/text_custor"
+            android:background="@drawable/goods_background" />
+
+        <TextView
+            android:id="@+id/goods_shuliang_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="件"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_20" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_40"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:text="产品售价:"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_20" />
+
+        <EditText
+            android:id="@+id/goods_shoujia"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_width="@dimen/layout_x_150"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:cursorVisible="true"
+            android:paddingLeft="@dimen/layout_x_3"
+            android:singleLine="true"
+            android:textSize="@dimen/layout_x_20"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@drawable/text_custor"
+            android:background="@drawable/goods_background" />
+        <TextView
+            android:id="@+id/goods_shoujia_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="元"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_20" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:text="计件方式:"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/layout_x_20" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="@dimen/layout_x_5"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_jianshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="按件数"
+            android:textSize="@dimen/layout_x_18"
+            android:textColor="@color/color_333" />
+
+        <RadioButton
+            android:id="@+id/radio_zhongliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:text="按重量"
+            android:textSize="@dimen/layout_x_18"
+            android:textColor="@color/color_333" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_36"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:text="默认运费:"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_18" />
+
+        <EditText
+            android:id="@+id/goods_yunfei_shuliang"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_width="@dimen/layout_x_80"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:cursorVisible="true"
+            android:paddingLeft="@dimen/layout_x_3"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/layout_x_18"
+            android:textCursorDrawable="@drawable/text_custor"
+            android:background="@drawable/goods_background" />
+
+        <TextView
+            android:id="@+id/goods_yunfei_shuliang_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="件内"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_18" />
+
+        <EditText
+            android:id="@+id/goods_yunfei_shoujia"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_width="@dimen/layout_x_80"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:cursorVisible="true"
+            android:paddingLeft="@dimen/layout_x_3"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/layout_x_18"
+            android:textCursorDrawable="@drawable/text_custor"
+            android:background="@drawable/goods_background" />
+        <TextView
+            android:id="@+id/goods_yunfei_shoujia_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="元"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_36"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:text="每添加:"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_18" />
+
+        <EditText
+            android:id="@+id/goods_add_shuliang"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_width="@dimen/layout_x_80"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:cursorVisible="true"
+            android:paddingLeft="@dimen/layout_x_3"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/layout_x_18"
+            android:textCursorDrawable="@drawable/text_custor"
+            android:background="@drawable/goods_background" />
+
+        <TextView
+            android:id="@+id/goods_add_shuliang_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="件，增加运费"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_18" />
+
+        <EditText
+            android:id="@+id/goods_addyunfei_edit"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_width="@dimen/layout_x_80"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:cursorVisible="true"
+            android:paddingLeft="@dimen/layout_x_3"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/layout_x_18"
+            android:textCursorDrawable="@drawable/text_custor"
+            android:background="@drawable/goods_background" />
+        <TextView
+            android:id="@+id/goods_addyunfei__text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="元"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_18" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/commit_btn"
+        android:layout_marginTop="@dimen/layout_x_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/layout_x_220"
+        android:layout_height="@dimen/layout_x_50"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:background="@drawable/goods_prices_commit"
+        android:gravity="center"/>
+</LinearLayout>

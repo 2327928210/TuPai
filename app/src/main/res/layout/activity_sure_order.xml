@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haoke.picturepat.photo.activity.SureOrderActivity">
+    <include layout="@layout/layout_titlebar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_goods_price3"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_height="@dimen/layout_x_70"
+            android:layout_alignParentBottom="true"
+            android:background="#fff" >
+
+            <View
+                android:id="@+id/view_bottom_goods_price4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:id="@+id/rel_goods_price4"
+                android:layout_width="@dimen/layout_x_150"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view_bottom_goods_price4"
+                android:layout_alignParentRight="true"
+                android:background="#f00" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="立即购买"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/layout_x_20" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

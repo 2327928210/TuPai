@@ -30,10 +30,9 @@
 
         <RelativeLayout
             android:id="@+id/lin_next"
-            android:layout_width="@dimen/layout_x_100"
+            android:layout_width="@dimen/layout_x_90"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/layout_x_16"
             android:layout_marginTop="@dimen/layout_y_20" >
 
             <TextView
@@ -42,10 +41,10 @@
                 android:layout_centerVertical="true"
                 android:background="#fff"
                 android:paddingBottom="@dimen/layout_y_3"
-                android:paddingLeft="@dimen/layout_x_10"
-                android:paddingRight="@dimen/layout_x_10"
+                android:paddingLeft="@dimen/layout_x_15"
+                android:paddingRight="@dimen/layout_x_15"
                 android:paddingTop="@dimen/layout_y_3"
-                android:text="@string/photo_list_syhd"
+                android:text="拍照"
                 android:textColor="#00b8ff"
                 android:textSize="@dimen/layout_y_18" />
         </RelativeLayout>
@@ -147,7 +146,7 @@
                 android:layout_marginTop="@dimen/layout_x_10"
                 android:singleLine="true"
                 android:textSize="@dimen/layout_x_22"
-                android:text="@string/photo_list_syhd"
+                android:text="@string/photo_main_map_Photograph"
                 android:textColor="#333" ></TextView>
 
                 <RelativeLayout
@@ -215,7 +214,7 @@
                 android:background="@drawable/photo_camer" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
@@ -225,6 +224,73 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/layout_x_12"
                     android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_x_70"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:background="#fff" >
+
+            <View
+                android:id="@+id/view_bottom_goods_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:id="@+id/rel_goods_price2"
+                android:layout_width="@dimen/layout_x_150"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view_bottom_goods_price"
+                android:layout_alignParentRight="true"
+                android:background="#f00" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                    android:text="商品定价"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/layout_x_20" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_goods_price3"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_height="@dimen/layout_x_70"
+            android:layout_alignParentBottom="true"
+            android:background="#fff" >
+
+            <View
+                android:id="@+id/view_bottom_goods_price4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:id="@+id/rel_goods_price4"
+                android:layout_width="@dimen/layout_x_150"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view_bottom_goods_price4"
+                android:layout_alignParentRight="true"
+                android:background="#f00" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="立即购买"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/layout_x_20" />
             </RelativeLayout>
         </RelativeLayout>
 
