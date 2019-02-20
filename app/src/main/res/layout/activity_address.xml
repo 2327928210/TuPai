@@ -6,5 +6,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.haoke.picturepat.photo.activity.AddressActivity">
-    <include layout="@layout/layout_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_myinfo"
+        style="@style/title_style"
+        android:background="@color/blue_n">
+
+        <RelativeLayout
+            android:id="@+id/title_left"
+            android:layout_marginTop="@dimen/layout_y_10"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/layout_x_5"
+            android:layout_marginBottom="@dimen/layout_y_5"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ima_left"
+                android:layout_marginTop="@dimen/layout_y_10"
+                android:layout_width="@dimen/layout_x_45"
+                android:layout_height="@dimen/layout_x_45"
+                android:background="@drawable/switch_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/layout_y_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/layout_y_15"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_marginTop="@dimen/layout_y_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userinfo_address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/layout_x_20" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_address_rel"
+            android:layout_marginTop="@dimen/layout_y_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/layout_y_15"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/layout_x_20">
+
+            <TextView
+                android:id="@+id/add_address_text"
+                android:layout_marginTop="@dimen/layout_y_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userinfo_addaddress"
+                android:textColor="@color/white"
+                android:textSize="@dimen/layout_x_20" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
 </LinearLayout>

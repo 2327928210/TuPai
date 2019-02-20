@@ -6,19 +6,19 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context=".photo.activity.PhotoListActivity" >
+    tools:context=".photo.activity.PhotoListActivity">
 
     <RelativeLayout
         android:id="@+id/rl_myinfo"
         android:layout_width="match_parent"
         android:layout_height="@dimen/layout_y_50"
-        android:background="@color/blue_n" >
+        android:background="@color/blue_n">
 
         <RelativeLayout
             android:id="@+id/rel_finish"
             android:layout_width="@dimen/layout_x_100"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/layout_y_20" >
+            android:layout_marginTop="@dimen/layout_y_20">
 
             <ImageView
                 android:layout_width="@dimen/layout_x_50"
@@ -33,7 +33,7 @@
             android:layout_width="@dimen/layout_x_90"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="@dimen/layout_y_20" >
+            android:layout_marginTop="@dimen/layout_y_20">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -66,20 +66,20 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layout_x_80" >
+        android:layout_height="@dimen/layout_x_80">
 
         <RelativeLayout
             android:id="@+id/photo_list_rl"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true" >
+            android:layout_alignParentRight="true">
 
             <LinearLayout
                 android:id="@+id/photo_list_share"
                 android:layout_width="@dimen/layout_x_60"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="@dimen/layout_x_30"
@@ -111,7 +111,7 @@
                 android:layout_marginLeft="@dimen/layout_x_15"
                 android:layout_toRightOf="@+id/photo_list_share"
                 android:clickable="true"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="@dimen/layout_x_30"
@@ -136,7 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/photo_list_rl"
-            android:padding="@dimen/layout_x_5" >
+            android:padding="@dimen/layout_x_5">
 
             <TextView
                 android:id="@+id/photo_list_title"
@@ -145,40 +145,40 @@
                 android:layout_marginLeft="@dimen/layout_x_15"
                 android:layout_marginTop="@dimen/layout_x_10"
                 android:singleLine="true"
-                android:textSize="@dimen/layout_x_22"
                 android:text="@string/photo_main_map_Photograph"
-                android:textColor="#333" ></TextView>
+                android:textColor="#333"
+                android:textSize="@dimen/layout_x_22"></TextView>
 
-                <RelativeLayout
-                    android:id="@+id/edit_rel"
-                     android:layout_marginLeft="@dimen/layout_x_15"
-                    android:layout_below="@+id/photo_list_title"
+            <RelativeLayout
+                android:id="@+id/edit_rel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_x_30"
+                android:layout_below="@+id/photo_list_title"
+                android:layout_marginLeft="@dimen/layout_x_15">
+
+                <ImageView
+                    android:id="@+id/edit_image"
+                    android:layout_width="@dimen/layout_x_22"
+                    android:layout_height="@dimen/layout_x_22"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_x_3"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photo_edit" />
+
+                <TextView
+                    android:id="@+id/edit_text"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/layout_x_30" >
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/layout_x_10"
+                    android:layout_marginTop="@dimen/layout_x_1"
+                    android:layout_toRightOf="@+id/edit_image"
+                    android:text="编辑"
+                    android:textColor="#999"
+                    android:textSize="@dimen/layout_x_18" />
+            </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/edit_image"
-                        android:layout_width="@dimen/layout_x_22"
-                        android:layout_height="@dimen/layout_x_22"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="@dimen/layout_x_3"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/photo_edit" />
-
-                    <TextView
-                        android:id="@+id/edit_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="@dimen/layout_x_10"
-                        android:layout_marginTop="@dimen/layout_x_1"
-                        android:layout_toRightOf="@+id/edit_image"
-                        android:text="编辑"
-                        android:textColor="#999"
-                        android:textSize="@dimen/layout_x_18" />
-                </RelativeLayout>
-            
         </RelativeLayout>
     </RelativeLayout>
 
@@ -189,14 +189,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:id="@+id/rel_camera"
             android:layout_width="match_parent"
             android:layout_height="@dimen/layout_x_70"
             android:layout_alignParentBottom="true"
-            android:background="#fff" >
+            android:background="#fff">
 
             <View
                 android:id="@+id/view_bottom"
@@ -211,7 +211,7 @@
                 android:layout_below="@+id/view_bottom"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/layout_x_12"
-                android:background="@drawable/photo_camer" >
+                android:background="@drawable/photo_camer">
 
                 <TextView
                     android:id="@+id/textView2"
@@ -231,9 +231,9 @@
             android:id="@+id/rel_goods_price"
             android:layout_width="match_parent"
             android:layout_height="@dimen/layout_x_70"
-            android:clickable="true"
             android:layout_alignParentBottom="true"
-            android:background="#fff" >
+            android:background="#fff"
+            android:clickable="true">
 
             <View
                 android:id="@+id/view_bottom_goods_price"
@@ -245,15 +245,15 @@
                 android:id="@+id/rel_goods_price2"
                 android:layout_width="@dimen/layout_x_150"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/view_bottom_goods_price"
                 android:layout_alignParentRight="true"
-                android:background="#f00" >
+                android:layout_below="@+id/view_bottom_goods_price"
+                android:background="#f00">
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                   android:layout_centerInParent="true"
+                    android:layout_centerInParent="true"
                     android:text="商品定价"
                     android:textColor="@color/white"
                     android:textSize="@dimen/layout_x_20" />
@@ -263,11 +263,11 @@
         <RelativeLayout
             android:id="@+id/rel_goods_price3"
             android:layout_width="match_parent"
-            android:clickable="true"
-            android:visibility="gone"
             android:layout_height="@dimen/layout_x_70"
             android:layout_alignParentBottom="true"
-            android:background="#fff" >
+            android:background="#fff"
+            android:clickable="true"
+            android:visibility="gone">
 
             <View
                 android:id="@+id/view_bottom_goods_price4"
@@ -279,9 +279,9 @@
                 android:id="@+id/rel_goods_price4"
                 android:layout_width="@dimen/layout_x_150"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/view_bottom_goods_price4"
                 android:layout_alignParentRight="true"
-                android:background="#f00" >
+                android:layout_below="@+id/view_bottom_goods_price4"
+                android:background="#f00">
 
                 <TextView
                     android:id="@+id/textView4"
@@ -294,19 +294,82 @@
             </RelativeLayout>
         </RelativeLayout>
 
-        <com.handmark.pulltorefresh.library.PullToRefreshGridView
-            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        <RelativeLayout
+            android:id="@+id/goods_price_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_x_10">
+
+            <ImageView
+                android:id="@+id/order_location_image"
+                android:layout_marginTop="@dimen/layout_x_5"
+                android:layout_width="@dimen/layout_x_21"
+                android:layout_height="@dimen/layout_x_18"
+                android:src="@drawable/order_location" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/layout_x_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/order_location_image"
+                android:text="南山智园"
+                android:textColor="@color/color_333" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:digits="@+id/order_price_text"
+                android:text="￥ 0.00"
+                android:textColor="#f00"
+                android:textSize="@dimen/layout_x_20" />
+
+
+            <ImageView
+                android:id="@+id/order_juli_image"
+                android:layout_below="@+id/order_location_image"
+                android:layout_marginTop="@dimen/layout_x_15"
+                android:layout_width="@dimen/layout_x_21"
+                android:layout_height="@dimen/layout_x_18"
+                android:src="@drawable/juli" />
+
+            <TextView
+                android:id="@+id/order_juli_text"
+                android:layout_marginTop="@dimen/layout_x_10"
+                android:layout_below="@+id/order_location_image"
+                android:layout_marginLeft="@dimen/layout_x_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/order_juli_image"
+                android:text="南山智园"
+                android:textColor="@color/color_333" />
+
+            <TextView
+                android:layout_marginTop="@dimen/layout_x_10"
+                android:layout_below="@+id/order_location_image"
+                android:id="@+id/order_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:digits="@+id/order_price_text"
+                android:text="￥ 0.00"
+                android:textColor="#f00"
+                android:textSize="@dimen/layout_x_20" />
+
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView xmlns:ptr="http://schemas.android.com/apk/res-auto"
             android:id="@+id/photo_list_listView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/rel_camera"
+            android:layout_below="@+id/goods_price_rl"
             android:divider="#eee"
             android:dividerHeight="@dimen/layout_y_1"
             android:gravity="fill"
             android:numColumns="1"
             android:stretchMode="columnWidth"
-            ptr:ptrMode="both" >
-        </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+            ptr:ptrMode="both"></com.handmark.pulltorefresh.library.PullToRefreshGridView>
     </RelativeLayout>
 
 </LinearLayout>
