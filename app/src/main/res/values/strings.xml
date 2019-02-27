@@ -5,6 +5,7 @@
     <string name="sales_goodsprices">商品定价</string>
     <string name="sales_sureorder">确认订单</string>
     <string name="sales_order">销售订单</string>
+    <string name="sales_tixian">申请提现</string>
     <string name="search_delect">是否删除记录</string>
     <string name="language">CN</string>
     <string name="cue_please_commitwait">正在上传，请稍候...</string>
@@ -94,6 +95,8 @@
     <string name="userinfo_camera">拍照上传</string>
     <string name="userinfo_photo">系统头像</string>
     <string name="userinfo_name">姓名</string>
+    <string name="userinfo_tixian">申请提现</string>
+    <string name="userinfo_myaddress">我的收货地址</string>
     <string name="userinfo_image">头像</string>
     <string name="userinfo_accounts">帐号</string>
     <string name="userinfo_password">修改密码</string>
@@ -105,6 +108,7 @@
     <string name="userinfo_we">关于我们</string>
     <string name="userinfo_mypicture">我的图拍</string>
     <string name="userinfo_addaddress">添加收货地址</string>
+    <string name="userinfo_edit_address">编辑收货地址</string>
     <string name="userinfo_address">收货地址</string>
     <string name="userinfo_save">保存</string>
     <string name="wechat">微信</string>

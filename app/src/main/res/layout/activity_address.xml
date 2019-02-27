@@ -53,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/layout_y_15"
+            android:clickable="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/layout_x_20">
 
@@ -67,5 +68,14 @@
         </RelativeLayout>
     </RelativeLayout>
 
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listView_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel_camera"
+        android:gravity="fill"
+        android:numColumns="1"
+        android:stretchMode="columnWidth"
+        ptr:ptrMode="both"></com.handmark.pulltorefresh.library.PullToRefreshGridView>
 
 </LinearLayout>

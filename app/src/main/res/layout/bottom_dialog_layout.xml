@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_yuanjiao">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_520">
+
+        <TextView
+            android:id="@+id/text_choose_diqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/layout_y_3"
+            android:padding="@dimen/layout_x_10"
+            android:text="请选择国家地区"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/layout_x_20"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/choose_svrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_choose_diqu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_hot_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_x_10"
+                    android:padding="@dimen/layout_x_10"
+                    android:text="热门城市"
+                    android:textColor="@color/color_666"
+                    android:textSize="@dimen/layout_x_18" />
+
+                <com.haoke.picturepat.view.MyGridView
+                    android:id="@+id/myGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="@dimen/layout_x_10"
+                    android:numColumns="4"
+                    android:paddingLeft="@dimen/layout_x_20"
+                    android:paddingRight="@dimen/layout_x_40"
+                    android:verticalSpacing="@dimen/layout_y_5"></com.haoke.picturepat.view.MyGridView>
+
+                <TextView
+                    android:id="@+id/text_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_x_10"
+                    android:layout_marginTop="@dimen/layout_y_5"
+                    android:padding="@dimen/layout_x_10"
+                    android:text="请选择"
+                    android:textColor="@color/color_666"
+                    android:textSize="@dimen/layout_x_18" />
+
+                <com.haoke.picturepat.view.MyListView
+                    android:id="@+id/myListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"></com.haoke.picturepat.view.MyListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/choose_rl"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_choose_diqu">
+
+            <TextView
+                android:id="@+id/text_yixuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_marginTop="@dimen/layout_y_5"
+                android:padding="@dimen/layout_x_10"
+                android:text="已选择"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/layout_x_18" />
+
+            <RelativeLayout
+                android:id="@+id/choose_shq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_x_50"
+                android:layout_below="@+id/text_yixuan">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/text_all"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_x_10"
+                        android:text="请选择"
+                        android:textColor="@color/blue_n"
+                        android:textSize="@dimen/layout_x_18" />
+
+                    <TextView
+                        android:id="@+id/text_daifa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_x_10"
+                        android:text="请选择"
+                        android:textColor="#333"
+                        android:textSize="@dimen/layout_x_18" />
+
+                    <TextView
+                        android:id="@+id/text_yishou"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_x_10"
+                        android:text="请选择"
+                        android:textColor="#333"
+                        android:textSize="@dimen/layout_x_18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_y_3"
+                    android:layout_alignParentBottom="true">
+
+                    <RelativeLayout
+                        android:id="@+id/text_all_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="@dimen/layout_x_50"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@color/blue_n" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/text_daifa_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="invisible">
+
+                        <View
+                            android:layout_width="@dimen/layout_x_50"
+                            android:layout_height="match_parent"
+                            android:background="@color/blue_n" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/text_yishou_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="invisible">
+
+                        <View
+                            android:layout_width="@dimen/layout_x_50"
+                            android:layout_height="match_parent"
+                            android:background="@color/blue_n" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_10"
+                android:layout_below="@+id/choose_shq" />
+
+            <TextView
+                android:id="@+id/text_qxz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_marginTop="@dimen/layout_y_5"
+                android:padding="@dimen/layout_x_10"
+                android:text="请选择"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/layout_x_18" />
+
+            <ListView
+                android:id="@+id/myListView_city_arcm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text_qxz"
+                android:divider="@null"></ListView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

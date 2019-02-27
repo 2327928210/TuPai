@@ -183,6 +183,89 @@
 
         <View
             android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_x_1"
+            android:background="@color/gray_ef" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_address"
+            style="@style/userinfo_lin_style" >
+
+            <ImageView
+                android:id="@+id/image_address"
+                android:layout_width="@dimen/layout_x_50"
+                android:padding="@dimen/layout_x_12"
+                android:layout_height="@dimen/layout_x_50"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_x_20"
+                android:src="@drawable/user_shouhuo" />
+
+            <TextView
+                style="@style/userinfo_text_style"
+                android:layout_toRightOf="@+id/image_address"
+                android:text="@string/userinfo_myaddress" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:src="@drawable/setting_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_x_1"
+            android:background="@color/gray_ef" />
+
+        <RelativeLayout
+            android:id="@+id/rel_tixian"
+            style="@style/userinfo_lin_style" >
+
+            <TextView
+                style="@style/userinfo_text_style"
+                android:layout_toRightOf="@+id/image_tixian"
+                android:text="@string/userinfo_tixian" />
+
+            <ImageView
+                android:id="@+id/image_tixian"
+                android:layout_width="@dimen/layout_x_50"
+                android:padding="@dimen/layout_x_12"
+                android:layout_height="@dimen/layout_x_50"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_x_20"
+                android:src="@drawable/user_tixian" />
+
+            <ImageView
+                android:id="@+id/imageView_tixian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:src="@drawable/setting_arrow" />
+
+            <TextView
+                android:id="@+id/tv_tixian"
+                style="@style/userinfo_text_style"
+                android:layout_marginRight="@dimen/layout_x_15"
+                android:layout_toLeftOf="@+id/imageView_tixian"
+                android:maxWidth="@dimen/layout_x_250"
+                android:maxLines="1"
+                android:ellipsize = "end"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
             android:layout_height="@dimen/layout_x_20"
             android:background="@color/gray_ef"
             android:visibility="gone" />
