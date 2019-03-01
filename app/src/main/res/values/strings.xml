@@ -5,7 +5,7 @@
     <string name="sales_goodsprices">商品定价</string>
     <string name="sales_sureorder">确认订单</string>
     <string name="sales_order">销售订单</string>
-    <string name="sales_tixian">申请提现</string>
+    <string name="sales_tixian">提现</string>
     <string name="search_delect">是否删除记录</string>
     <string name="language">CN</string>
     <string name="cue_please_commitwait">正在上传，请稍候...</string>

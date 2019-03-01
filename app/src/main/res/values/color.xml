@@ -4,11 +4,15 @@
     <color name="color_city">#eeeeee</color>
     <color name="color_city_black">#000000</color>
     <color name="parttranslucent">#39000000</color>
+    <color name="color_000">#000</color>
     <color name="color_333">#333</color>
     <color name="color_666">#666</color>
     <color name="color_777">#777</color>
     <color name="color_888">#888</color>
     <color name="color_999">#999</color>
+    <color name="color_aaa">#aaa</color>
+    <color name="color_ccc">#ccc</color>
+    <color name="color_eee">#eee</color>
     <color name="color_f00">#f00</color>
     <!-- 纯色 -->
     <color name="transparent">#0FFF</color>

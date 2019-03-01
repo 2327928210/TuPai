@@ -308,6 +308,7 @@
                 android:src="@drawable/order_location" />
 
             <TextView
+                android:id="@+id/order_addrss_text"
                 android:layout_marginLeft="@dimen/layout_x_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -316,11 +317,12 @@
                 android:textColor="@color/color_333" />
 
             <TextView
+                android:id="@+id/order_jiage_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:digits="@+id/order_price_text"
-                android:text="￥ 0.00"
+                android:text=""
                 android:textColor="#f00"
                 android:textSize="@dimen/layout_x_20" />
 
@@ -345,15 +347,15 @@
                 android:textColor="@color/color_333" />
 
             <TextView
+                android:id="@+id/order_canshu_text"
                 android:layout_marginTop="@dimen/layout_x_10"
                 android:layout_below="@+id/order_location_image"
-                android:id="@+id/order_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:digits="@+id/order_price_text"
-                android:text="￥ 0.00"
-                android:textColor="#f00"
+                android:text=""
+                android:textColor="@color/color_666"
                 android:textSize="@dimen/layout_x_20" />
 
         </RelativeLayout>

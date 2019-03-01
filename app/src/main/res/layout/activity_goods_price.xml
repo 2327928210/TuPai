@@ -68,7 +68,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/layout_x_25"
-            android:cursorVisible="true"
             android:textSize="@dimen/layout_x_20"
             android:paddingLeft="@dimen/layout_x_3"
             android:singleLine="true"
@@ -97,7 +96,6 @@
             android:layout_width="@dimen/layout_x_150"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/layout_x_15"
-            android:cursorVisible="true"
             android:textSize="@dimen/layout_x_20"
             android:paddingLeft="@dimen/layout_x_3"
             android:singleLine="true"
@@ -136,7 +134,6 @@
             android:layout_width="@dimen/layout_x_150"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/layout_x_15"
-            android:cursorVisible="true"
             android:paddingLeft="@dimen/layout_x_3"
             android:singleLine="true"
             android:textSize="@dimen/layout_x_20"
@@ -152,6 +149,7 @@
             android:textColor="@color/color_333"
             android:textSize="@dimen/layout_x_20" />
     </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -212,7 +210,6 @@
             android:layout_width="@dimen/layout_x_80"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/layout_x_15"
-            android:cursorVisible="true"
             android:paddingLeft="@dimen/layout_x_3"
             android:singleLine="true"
             android:inputType="numberDecimal"
@@ -235,7 +232,6 @@
             android:layout_width="@dimen/layout_x_80"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/layout_x_15"
-            android:cursorVisible="true"
             android:paddingLeft="@dimen/layout_x_3"
             android:singleLine="true"
             android:inputType="numberDecimal"
@@ -274,7 +270,6 @@
             android:layout_width="@dimen/layout_x_80"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/layout_x_15"
-            android:cursorVisible="true"
             android:paddingLeft="@dimen/layout_x_3"
             android:singleLine="true"
             android:inputType="numberDecimal"
@@ -297,7 +292,6 @@
             android:layout_width="@dimen/layout_x_80"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/layout_x_15"
-            android:cursorVisible="true"
             android:paddingLeft="@dimen/layout_x_3"
             android:singleLine="true"
             android:inputType="numberDecimal"
@@ -314,15 +308,20 @@
             android:textSize="@dimen/layout_x_18" />
     </LinearLayout>
 
-
-    <Button
-        android:id="@+id/commit_btn"
+    <RelativeLayout
+        android:id="@+id/commit_rl"
         android:layout_marginTop="@dimen/layout_x_50"
-        android:layout_gravity="center_horizontal"
         android:layout_width="@dimen/layout_x_220"
         android:layout_height="@dimen/layout_x_50"
-        android:text="提交"
-        android:textColor="@color/white"
         android:background="@drawable/goods_prices_commit"
-        android:gravity="center"/>
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:id="@+id/commit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
 </LinearLayout>
