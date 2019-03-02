@@ -476,7 +476,8 @@
         <activity android:name=".photo.activity.AddressActivity" />
         <activity android:name=".photo.activity.AddAddressActivity" />
         <activity android:name=".photo.activity.GoodsPriceActivity" />
-        <activity android:name=".photo.activity.TiXianActivity"></activity>
+        <activity android:name=".photo.activity.TiXianActivity" />
+        <activity android:name=".photo.activity.PaymentActivity"></activity>
     </application>
 
 </manifest>

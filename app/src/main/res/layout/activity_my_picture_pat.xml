@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#eee"
+    android:background="@color/color_eee"
     tools:context="com.haoke.picturepat.photo.activity.MyPicturePatActivity">
 
     <include layout="@layout/layout_titlebar" />

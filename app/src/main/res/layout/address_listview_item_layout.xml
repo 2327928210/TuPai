@@ -46,7 +46,7 @@
                 android:layout_marginLeft="@dimen/layout_x_10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="编辑"
+                android:text=""
                 android:textColor="@color/color_333"
                 android:textSize="@dimen/layout_x_20" />
 
@@ -61,6 +61,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/text2_rel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_rel"

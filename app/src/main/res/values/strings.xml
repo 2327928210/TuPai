@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">图拍</string>
+    <string name="order_pay">支付界面</string>
     <string name="sales_goodsprices">商品定价</string>
     <string name="sales_sureorder">确认订单</string>
     <string name="sales_order">销售订单</string>
