@@ -245,7 +245,7 @@
             android:name=".main.activity.SetMapActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".main.activity.BinDingActivity"
+            android:name=".photo.activity.BinDingActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".main.activity.AboutActivity"
