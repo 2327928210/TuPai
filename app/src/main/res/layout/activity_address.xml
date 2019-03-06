@@ -16,7 +16,7 @@
             android:id="@+id/title_left"
             android:layout_marginTop="@dimen/layout_y_10"
             android:layout_width="wrap_content"
-            android:padding="@dimen/layout_x_5"
+            android:layout_margin="@dimen/layout_x_5"
             android:layout_marginBottom="@dimen/layout_y_5"
             android:layout_alignParentBottom="true"
             android:layout_height="wrap_content">
@@ -25,7 +25,8 @@
                 android:id="@+id/ima_left"
                 android:layout_marginTop="@dimen/layout_y_10"
                 android:layout_width="@dimen/layout_x_45"
-                android:layout_height="@dimen/layout_x_45"
+                android:layout_height="@dimen/layout_x_48"
+                android:scaleType="fitXY"
                 android:background="@drawable/switch_back" />
         </RelativeLayout>
 
@@ -34,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/layout_y_15"
+            android:layout_marginBottom="@dimen/layout_y_10"
             android:layout_centerHorizontal="true">
 
             <TextView
@@ -52,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/layout_y_15"
+            android:layout_marginBottom="@dimen/layout_y_10"
             android:clickable="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/layout_x_20">
