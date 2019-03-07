@@ -151,7 +151,7 @@
         android:layout_marginTop="@dimen/layout_y_50"
         android:background="@color/blue_n"
         android:gravity="center"
-        android:text="全部提现"
+        android:text="提现"
         android:textColor="@color/white"
         android:textSize="@dimen/layout_x_20" />
 
